@@ -1,0 +1,1098 @@
+:root {
+    --primary-color: #004a99; /* Professional Academic Blue */
+    --text-dark: #333;
+    --text-light: #666;
+    --bg-light: #f4f7f6;
+    --white: #ffffff;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background: var(--white);
+}
+
+.container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+/* Navigation - Responsive */
+nav {
+    background: var(--white);
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Or whatever your site width is */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo { font-weight: 700; font-size: 1.4rem; color: var(--primary-color); text-decoration: none; }
+
+.nav-links {
+    display: flex;
+    gap: 20px; /* Adjust this for the spacing between tabs */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover { color: var(--primary-color); }
+
+/* Hero Section */
+.hero { padding: 80px 0; background: var(--bg-light); text-align: center; }
+.hero h1 { font-size: 2.8rem; margin-bottom: 15px; }
+
+/* Generic Section Styling */
+section { padding: 60px 0; }
+h2 { margin-bottom: 30px; font-weight: 600; border-bottom: 2px solid var(--primary-color); display: inline-block; }
+
+/* Footer */
+footer { background: #222; color: #fff; padding: 40px 0; text-align: center; margin-top: 50px; }
+
+/* Mobile Menu Toggle (Simplified) */
+@media (max-width: 768px) {
+    .nav-links { display: none; } /* In a real project, we'd add a hamburger menu here */
+    .hero h1 { font-size: 2rem; }
+}
+
+/* People Page Specific Styles */
+.people-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.person-card {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.person-card:hover {
+    transform: translateY(-5px);
+}
+
+.person-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%; /* Circular images */
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid var(--bg-light);
+}
+
+.person-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: var(--primary-color);
+}
+
+.role {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 15px;
+}
+
+.profile-link {
+    font-size: 0.85rem;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.pi {
+    max-width: 300px;
+    margin: 0 auto; /* Centers the PI card */
+}
+
+.active {
+    color: var(--primary-color) !important;
+    border-bottom: 2px solid var(--primary-color);
+}
+/* Project Page Styles */
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.project-card {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Image takes 1/3, content takes 2/3 */
+    gap: 30px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-content {
+    padding: 30px;
+}
+
+.tag {
+    display: inline-block;
+    background: var(--bg-light);
+    color: var(--primary-color);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.project-content h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.project-links {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+}
+
+/* Button Styles */
+.btn-small {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.btn-outline {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 8px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+/* Mobile Responsiveness for Projects */
+@media (max-width: 768px) {
+    .project-card {
+        grid-template-columns: 1fr; /* Stack vertically on small screens */
+    }
+    
+    .project-image {
+        height: 200px;
+    }
+}
+/* Publication Styles */
+.pub-filters {
+    margin-bottom: 40px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.filter-btn {
+    padding: 8px 20px;
+    border: 1px solid #ddd;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.filter-btn.active, .filter-btn:hover {
+    background: var(--primary-color);
+    color: #white;
+    border-color: var(--primary-color);
+}
+
+.pub-item {
+    display: flex;
+    gap: 30px;
+    padding: 25px 0;
+    border-bottom: 1px solid #eee;
+    animation: fadeIn 0.5s ease;
+}
+
+.pub-year {
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    min-width: 60px;
+}
+
+.pub-details .author {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+.pub-links {
+    margin-top: 10px;
+}
+
+.btn-cite {
+    font-size: 0.75rem;
+    text-decoration: none;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-right: 8px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.btn-cite:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* News Timeline */
+.timeline {
+    border-left: 2px solid var(--primary-color);
+    margin-left: 20px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.timeline-item {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -41px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    background: var(--primary-color);
+    border-radius: 50%;
+}
+
+.timeline-date {
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+/* Course Cards */
+.course-card {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.course-code {
+    background: var(--bg-light);
+    color: var(--primary-color);
+    padding: 2px 8px;
+    font-weight: 700;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+/* News Timeline */
+.timeline {
+    border-left: 3px solid #eee;
+    margin-left: 20px;
+    padding-left: 30px;
+}
+
+.timeline-item {
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -38px;
+    top: 5px;
+    width: 14px;
+    height: 14px;
+    background: var(--primary-color);
+    border-radius: 50%;
+}
+
+.timeline-date {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+/* Course Styling */
+.course-card {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    transition: transform 0.2s ease;
+}
+
+.course-card:hover {
+    transform: scale(1.01);
+}
+
+.course-code {
+    background: #e9ecef;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: #495057;
+}
+/* Contact Grid */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.map-placeholder {
+    background: #e9ecef;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px dashed #ccc;
+}
+
+/* Blog Grid */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.blog-card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: box-shadow 0.3s;
+}
+
+.blog-card:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.blog-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-content {
+    padding: 20px;
+}
+
+.blog-date {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* --- Navigation Styling --- */
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 5px 0;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent; /* Prepare the border */
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+/* --- THE PRO TIP: Active Link Style --- */
+.nav-links a.active {
+    color: var(--primary-color) !important;
+    border-bottom: 2px solid var(--primary-color); /* Underline the active page */
+    font-weight: 700;
+}
+
+/* --- Footer Styling --- */
+.footer {
+    background: #1a1a1a;
+    color: #f4f4f4;
+    padding: 60px 0 30px 0;
+    margin-top: 80px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.footer h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    font-size: 0.8rem;
+    width: 100%;
+    color: #888;
+}
+
+.pub-item {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.pub-year {
+  font-weight: bold;
+  color: #555;
+}
+
+.pub-filters {
+  margin-bottom: 16px;
+}
+
+.filter-btn {
+  margin-right: 8px;
+}
+
+/* Hero Section Enhancements */
+.hero {
+    background: linear-gradient(135deg, #003d7a 0%, #002147 100%); /* Deep academic blue */
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-tagline {
+    font-size: 1.4rem;
+    opacity: 0.9;
+    margin-bottom: 30px;
+}
+
+/* Section Titles */
+.section-title {
+    text-align: center;
+    margin: 0px 0 40px;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Join Us Box Styles */
+.join-us-box {
+    background: #f4f7f9;
+    border-left: 5px solid #cc0000; /* BU Red accent */
+    padding: 40px;
+    margin: -10px 0;
+    border-radius: 8px;
+}
+
+.join-content h2 {
+    margin-top: 0;
+    color: #cc0000;
+}
+
+/* Grid Layout for scannability */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background: white;
+    padding: 25px;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    transition: transform 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+/* Research Table Styling */
+.research-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0px 0 40px;
+    font-size: 1.1rem;
+    background-color: #fff;
+}
+
+.research-table th {
+    background-color: #f8f9fa;
+    color: #003d7a;
+    text-align: left;
+    padding: 15px;
+    border-bottom: 3px solid #cc0000; /* BU Red accent */
+}
+
+.research-table td {
+    padding: 20px 15px;
+    border-bottom: 1px solid #eee;
+    vertical-align: top;
+    line-height: 1.6;
+}
+
+.research-table tr:hover {
+    background-color: #fafafa;
+}
+
+/* Section Dividers */
+.section-divider {
+    border: 0;
+    height: 1px;
+    background: #eee;
+    margin: -30px 0;
+}
+
+.site-footer {
+    background-color: #333; /* Update this to your preferred dark color */
+    color: white;
+    padding: 40px 0;
+    margin-top: 60px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Pushes links to the right */
+    align-items: center;
+}
+
+/* Left Side Styling */
+.footer-left {
+    text-align: left;
+}
+
+.footer-logo {
+    height: 35px;
+    margin-bottom: 10px;
+    filter: brightness(0) invert(1); /* Makes the logo white for dark backgrounds */
+}
+
+.footer-left p {
+    font-size: 0.85rem;
+    margin: 0;
+    opacity: 0.8;
+}
+
+/* Right Side Styling (Links + Icons) */
+.footer-right {
+    display: flex;
+    gap: 25px; /* Spacing between link groups */
+}
+
+.footer-link-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-link-item span {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.footer-link-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: opacity 0.2s;
+}
+
+.footer-link-item a:hover {
+    opacity: 0.7;
+    color: #cc0000; /* BU Red on hover */
+}
+
+/* Responsive: Stack on mobile */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    .footer-left { text-align: center; }
+}
+
+/* Update the icon specifically */
+.footer-link-item a i {
+    font-size: 1.4rem; /* Larger, professional size */
+    color: white;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.footer-link-item a:hover i {
+    color: #cc0000; /* BU Red on hover */
+    transform: scale(1.1); /* Slight "smart" zoom effect */
+}
+
+.footer-link-item span {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    opacity: 0.7;
+}
+.footer-logo {
+    height: 45px; /* Adjust size as needed */
+    margin-bottom: 10px;
+    
+    /* This filter trick removes the red background and leaves white lines */
+    /* It works best on dark footer backgrounds */
+    filter: brightness(1.2) contrast(1.2);
+    mix-blend-mode: lighten; 
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.project-card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    overflow: hidden; /* Clips the image to the border radius */
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+}
+
+.project-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Keeps images looking good regardless of ratio */
+}
+
+.project-content {
+    padding: 25px;
+}
+
+.tag {
+    display: inline-block;
+    background: #f0f4f8;
+    color: #003d7a;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.project-links {
+    margin-top: auto; /* Pushes links to the bottom of the card */
+    display: flex;
+    gap: 15px;
+}
+
+.btn-small {
+    background: #003d7a;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.btn-outline {
+    border: 1px solid #003d7a;
+    color: #003d7a;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.people-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.person-card {
+    text-align: center;
+}
+
+.person-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Circle photos look smarter */
+    object-fit: cover;
+    border: 3px solid #eee;
+}
+
+.alumni-item {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.filter-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    padding: 8px 18px;
+    margin: 5px;
+    border: 1px solid #cc0000;
+    background: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.filter-btn.active {
+    background: #cc0000;
+    color: white;
+}
+
+.image-container {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    overflow: hidden; /* Ensures the image stays a circle */
+    border: 3px solid #eee;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Prevents stretching */
+    transition: transform 0.3s ease;
+}
+
+.person-card:hover img {
+    transform: scale(1.05); /* Subtle "smart" zoom on hover */
+}
+.alumni-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.alumni-item {
+    background: #fdfdfd;
+    border-left: 4px solid #cc0000; /* BU Red accent */
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+
+/* News Flash Styling */
+.news-flash-container {
+    display: flex;
+    align-items: center;
+    background: #fdf2f2; /* Very light red tint */
+    border: 1px solid #ffcccc;
+    border-radius: 4px;
+    margin: 30px 0;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    overflow: hidden;
+    padding: 10px 15px;
+}
+
+.news-label {
+    background: #cc0000; /* BU Red */
+    color: white;
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    border-radius: 3px;
+    margin-right: 15px;
+    white-space: nowrap;
+}
+
+.news-content {
+    display: flex;
+    gap: 40px; /* Space between different news items */
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.news-item {
+    display: inline-block;
+}
+
+/* Optional: Subtle animation if you have many news items */
+@media (max-width: 768px) {
+    .news-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.pub-item {
+    margin-bottom: 2rem;
+    padding-left: 36px; /* Width of the indent */
+    text-indent: -36px; /* Pulls first line back out */
+    line-height: 1.6;
+    color: #333;
+    font-size: 1.05rem;
+}
+
+.apa-authors {
+    font-weight: 600; /* Makes authors slightly bolder for readability */
+}
+
+.apa-title {
+    color: #000;
+}
+
+.apa-journal em {
+    font-style: italic;
+    color: #555;
+}
+
+.pub-links {
+    text-indent: 0; /* Resets the indent for the buttons */
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-cite {
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #cc0000; /* BU Red */
+    border: 1px solid #cc0000;
+    padding: 3px 10px;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+.btn-cite:hover {
+    background: #cc0000;
+    color: #fff;
+}
+
+.pub-item {
+    display: flex;
+    margin-bottom: 18px;
+}
+
+.pub-number {
+    width: 30px;
+    font-weight: bold;
+}
+
+.pub-details {
+    flex: 1;
+    line-height: 1.6;
+}
+
+.pub-details em {
+    font-style: italic;
+}
+
+.pub-details a {
+    text-decoration: none;
+}
+
+.pub-details a:hover {
+    text-decoration: underline;
+}
+
+/* This stops the "jump" by reserving the height immediately */
+#header-placeholder {
+    height: 70px; /* Match the exact height of your navbar */
+    background-color: #003d7a; /* Match your navbar color */
+    display: block;
+    width: 100%;
+}
+
+/* Ensure the navbar doesn't cause a horizontal scroll */
+.navbar {
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+/* Initial state: invisible */
+body {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* When the page is ready, we reveal it via JS */
+body.loaded {
+    opacity: 1;
+}
+
+#backToTop {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #cc0000; /* BU Red */
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%; /* Round button */
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+#backToTop:hover {
+    background-color: #003d7a; /* BU Blue on hover */
+    transform: scale(1.1);
+}
+
+
+
+/* 1. The Hero Container */
+.hero-banner {
+    background: url('imgs/hero-bg.png') no-repeat center center;
+    background-size: cover;
+    /* Optional: background-attachment: fixed; creates a parallax effect */
+    height: 380px; 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+}
+
+/* 2. The Semi-Transparent "Glass" Overlay */
+.hero-overlay {
+    background: linear-gradient(
+        to bottom, 
+        rgba(0, 38, 77, 0.4), /* Deep BU Blue tint at top */
+        rgba(0, 20, 40, 0.7)   /* Darker at bottom for text contrast */
+    );
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 3. Text Typography */
+.hero-banner .container {
+    max-width: 1000px;
+    padding: 0 20px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.hero-banner h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /* Subtle glow to make text pop against the Aurora */
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.2), 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero-banner p {
+    font-size: 1.3rem;
+    margin-top: 15px;
+    font-weight: 300;
+    font-style: italic;
+    opacity: 0.9;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .hero-banner {
+        height: 280px;
+    }
+    .hero-banner h1 {
+        font-size: 2rem;
+    }
+    .hero-banner p {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications | FORMES</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="header-placeholder"></div>
+    <div id="hero-placeholder"></div>
+
+    
+
+    <main class="container">
+
+        <!-- FILTER BUTTONS -->
+        <div class="pub-filters">
+            <button class="filter-btn active" onclick="filterPubs('all', event)">All</button>
+            <button class="filter-btn" onclick="filterPubs('article', event)">Journals</button>
+            <button class="filter-btn" onclick="filterPubs('inproceedings', event)">Conferences</button>
+            <button class="filter-btn" onclick="filterPubs('misc', event)">ArXiv/Other</button>
+        </div>
+
+        <!-- PUBLICATIONS WILL LOAD HERE -->
+        <div id="pub-container"></div>
+
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

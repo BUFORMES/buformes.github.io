@@ -1,0 +1,129 @@
+STATUS: Active
+CATEGORY: PI
+NAME: Prof. Yves Atchade
+ROLE: Professor of Mathematics and Statistics
+IMAGE: imgs/people/PI.jpeg
+BIO: Professor and Duan Family Faculty Fellow of Data Science, Boston University
+LINK: https://www.bu.edu/math/people/faculty/yves-atchade/
+---
+STATUS: Active
+CATEGORY: Postdoc
+NAME: Indrajit Kalita
+ROLE: Postdoctoral Researcher, Computing & Data Sciences, Boston University
+IMAGE: imgs/people/PD_indra.jpg
+BIO: Deep Learning, Computer Vision, Data Analytics, Remote Sensing, Weather Forecasting
+LINK: https://indrajitkalita.com/
+---
+STATUS: Active
+CATEGORY: Postdoc
+NAME: Simin Shekarpaz
+ROLE: Postdoctoral Researcher, Mathematics and Statistics, Boston University
+IMAGE: 
+BIO: 
+LINK:
+---
+STATUS: Active
+CATEGORY: PhD
+NAME: Tianrui Hou, Mathematics and Statistics, Boston University
+ROLE: PhD Student
+IMAGE: images/people/jane.jpg
+BIO: 
+---
+STATUS: Active
+CATEGORY: PhD
+NAME: Yuke Zhang, Computing & Data Sciences, Boston University
+ROLE: PhD Student
+IMAGE: images/people/jane.jpg
+BIO: 
+---
+STATUS: Active
+CATEGORY: PhD
+NAME: Lucia Vilallonga
+ROLE: PhD Student, Mathematics and Statistics, Boston University
+IMAGE: images/people/jane.jpg
+BIO: 
+---
+STATUS: Active
+CATEGORY: PhD
+NAME: Sungjoon Park
+ROLE: PhD Student, Computing & Data Sciences, Boston University
+IMAGE: images/people/jane.jpg
+BIO: 
+---
+STATUS: Active
+CATEGORY: PhD
+NAME: Harrison Ofori
+ROLE: PhD Student, Mathematics and Statistics, Boston University
+IMAGE: images/people/jane.jpg
+BIO: 
+---
+
+STATUS: Past
+CATEGORY: PhD
+NAME: Xinru Liu
+ROLE: PhD Student, Mathematics and Statistics, Boston University
+DESC: Now at Microsoft.
+YEAR: 2021-2025
+---
+STATUS: Past
+CATEGORY: PhD
+NAME: Yi Sun
+ROLE: PhD Student, Mathematics and Statistics, Boston University
+DESC: Now at Amazon
+YEAR: 2021-2025
+---
+STATUS: Past
+CATEGORY: PhD
+NAME: Liwei Wang
+ROLE: PhD Student, Mathematics and Statistics, Boston University
+DESC: 
+YEAR: 2019-2023
+---
+STATUS: Past
+CATEGORY: PhD
+NAME: Qiuyun Zhu
+ROLE: PhD Student, Mathematics and Statistics, Boston University
+DESC: 
+YEAR: 2019-2023
+---
+STATUS: Past
+CATEGORY: PhD
+NAME: Keer Jiang
+ROLE: PhD Student, Mathematics and Statistics, Boston University
+DESC: 
+YEAR: 2018-2022
+---
+STATUS: Past
+CATEGORY: Postdoc
+NAME: Joonha Park
+ROLE: 
+DESC: 
+YEAR: 2018-2020
+---
+STATUS: Past
+CATEGORY: Postdoc
+NAME: Gautam Sabnis
+ROLE: 
+DESC: 
+YEAR: 2018-2019
+---
+STATUS: Past
+CATEGORY: Undergrad
+NAME: Nils Cazemier
+ROLE: Ecole Polytechnique, Palaiseau, France. Visiting MA Student.
+DESC: 
+YEAR: 2023 (Summer)
+---
+STATUS: Past
+CATEGORY: Undergrad
+NAME: Peiyang Liu
+ROLE: 
+DESC: 
+YEAR: 2023-2024
+---
+STATUS: Past
+CATEGORY: Undergrad
+NAME: Andrew Furlong
+ROLE: 
+DESC: 
+YEAR: 2019

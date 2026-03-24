@@ -1,0 +1,16 @@
+
+STATUS: Active
+TITLE: Rainfall Prediction in West Africa
+TAG: Deep Learning, Climate Science
+IMAGE: imgs/projects/AOI.jpeg
+DESC: Developing deep learning models to improve rainfall forecasting in West Africa, focusing on agricultural resilience and disaster preparedness.
+LINK: https://math.bu.edu/people/atchade/rainfall.html
+REPO: https://github.com/indrakalita/RainfallForecasting
+---
+STATUS: Past
+TITLE: Large-Scale Bayesian Inference
+TAG: Bayesian ML, MCMC
+IMAGE: imgs/projects/unbiased_mcmc.png
+DESC: Developing computationally tractable Bayesian frameworks for high-dimensional problems, focusing on unbiased MCMC methods and sampling theory for complex systems.
+LINK: https://pierrejacob.quarto.pub/unbiased-mcmc/
+REPO: https://github.com/pierrejacob/umcmchandbook

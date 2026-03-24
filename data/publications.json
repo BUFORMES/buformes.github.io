@@ -1,0 +1,200 @@
+[
+  {
+    "type": "inproceedings",
+    "year": "2026",
+    "title": "Laplace approximation for Bayesian variable selection via Le Cam's one-step procedure",
+    "authors": "Tianrui Hou, Yves Atchade",
+    "journal": "AISTATS 2026",
+    "pdf": null,
+    "doi": null
+  },
+  {
+    "type": "article",
+    "year": "2026",
+    "title": "Data-driven rainfall prediction at a regional scale: a case study with Ghana",
+    "authors": "Indrajit Kalita, Lucia Vilallonga, Yves Atchade",
+    "journal": "AI for the Earth Systems",
+    "pdf": "https://journals.ametsoc.org/view/journals/aies/aies-overview.xml",
+    "doi": null
+  },
+  {
+    "type": "article",
+    "year": "2026",
+    "title": "Unbiased Markov Chain Monte Carlo: what, why, and how",
+    "authors": "Pierre Jacob, Yves Atchade",
+    "journal": "Handbook of MCMC 2nd Edition",
+    "pdf": "https://unbiased-mcmc.github.io/",
+    "doi": null
+  },
+  {
+    "type": "article",
+    "year": "2025",
+    "title": "A statistical perspective on unrolling models for inverse problems",
+    "authors": "Xinru Liu, Qiuyun Zhu, Yves Atchade",
+    "journal": "Journal of Machine Learning Research (JMLR)",
+    "pdf": "https://www.jmlr.org/papers/volume26/24-0131/24-0131.pdf",
+    "doi": null
+  },
+  {
+    "type": "article",
+    "year": "2025",
+    "title": "Efficiency bounds for moment condition models with mixed identification strength",
+    "authors": "Prosper Dovonon, Firmin D Tchatoka, Yves Atchade",
+    "journal": "Journal of Econometrics",
+    "pdf": null,
+    "doi": null
+  },
+  {
+    "type": "inproceedings",
+    "year": "2024",
+    "title": "On cyclical MCMC",
+    "authors": "Liwei Wang, Xinru Liu, Aaron Smith, Yves Atchade",
+    "journal": "AISTATS 2024",
+    "pdf": null,
+    "doi": null
+  },
+  {
+    "type": "article",
+    "year": "2023",
+    "title": "Minimax quasi-Bayesian estimation in sparse canonical correlation analysis via a Rayleigh quotient function",
+    "authors": "Qiuyun Zhu, Yves Atchade",
+    "journal": "Journal of the American Statistical Association (JASA)",
+    "pdf": null,
+    "doi": null
+  },
+  {
+    "type": "inproceedings",
+    "year": "2023",
+    "title": "Probabilistic Unrolling: Scalable, Inverse-Free Maximum Likelihood Estimation for Latent Gaussian Models",
+    "authors": "Alexander Lin, Bahareh Tolooshams, Demba Ba, Yves Atchade",
+    "journal": "ICML 2023",
+    "pdf": null,
+    "doi": null
+  },
+  {
+    "type": "article",
+    "year": "2023",
+    "title": "A fast asynchronous MCMC sampler for sparse Bayesian inference",
+    "authors": "Liwei Wang, Yves Atchade",
+    "journal": "Journal of the Royal Statistical Society: Series B (JRSS-B)",
+    "pdf": null,
+    "doi": null
+  },
+  {
+    "type": "article",
+    "year": "2021",
+    "title": "Approximate spectral Gaps for Markov chains mixing times in high dimensions",
+    "authors": "Yves Atchade",
+    "journal": "SIAM Journal on Mathematics of Data Science",
+    "pdf": null,
+    "doi": null
+  },
+  {
+    "type": "article",
+    "year": "2020",
+    "title": "Unbiased Markov Chain Monte Carlo with couplings",
+    "authors": "Pierre Jacob, John O'Leary, Yves Atchade",
+    "journal": "Journal of the Royal Statistical Society: Series B (JRSS-B)",
+    "pdf": null,
+    "doi": null
+  },
+  {
+    "type": "article",
+    "year": "2020",
+    "title": "Sequential change-point detection in high-dimensional Gaussian graphical models",
+    "authors": "Hossein Keshararz, George Michailidis, Yves Atchade",
+    "journal": "Journal of Machine Learning Research (JMLR)",
+    "pdf": null,
+    "doi": null
+  },
+  {
+    "type": "techreport",
+    "year": "2026",
+    "title": "On the estimation rate of Bayesian physics-informed neural networks for inverse problems",
+    "authors": "Yi Sun, Debarghya Mukherjee, Yves Atchade",
+    "journal": "Technical Report",
+    "pdf": null,
+    "doi": null
+  },
+  {
+    "type": "misc",
+    "year": "2026",
+    "title": "On generative energy-based models",
+    "authors": "Keer Jiang, Yi Sun, Yves Atchade",
+    "journal": "Technical Report",
+    "pdf": null,
+    "doi": null
+  },
+  {
+    "type": "misc",
+    "year": "2026",
+    "title": "An approach to large-scale quasi-Bayesian inference with spike-and-slab prior",
+    "authors": "Anwesha Bhattacharyya, Yves Atchade",
+    "journal": "Technical Report",
+    "pdf": null,
+    "doi": null
+  },
+  {
+    "type": "misc",
+    "year": "2026",
+    "title": "Bayesian variable selection in linear regression models with instrumental variables",
+    "authors": "Gautam Sabnis, Prosper Dovonon, Yves Atchade",
+    "journal": "Technical Report",
+    "pdf": null,
+    "doi": null
+  },
+    {
+    "type": "misc",
+    "year": "2026",
+    "title": "Hyperspectral image unmixing: accounting for wavelength dependence",
+    "authors": "Chia Chye Yee, Yves Atchade",
+    "journal": "Unpublished Manuscript",
+    "pdf": null,
+    "doi": null
+  },
+  {
+    "type": "misc",
+    "year": "2026",
+    "title": "Randomized Evaluation of Institutions: Theory with Application to Voting and Deliberation Experiments",
+    "authors": "Leonard Wantchekon, Yves Atchade",
+    "journal": "Unpublished Manuscript",
+    "pdf": null,
+    "doi": null
+  },
+  {
+    "type": "misc",
+    "year": "2026",
+    "title": "Ethnic Solidarity and National Public Goods Programmes: Evidence from a Field Experiment",
+    "authors": "Gwyneth McClendon, Leonard Wantchekon, Yves Atchade",
+    "journal": "Unpublished Manuscript",
+    "pdf": null,
+    "doi": null
+  },
+  {
+    "type": "misc",
+    "year": "2026",
+    "title": "A strong law of large numbers for martingale arrays",
+    "authors": "Yves Atchade",
+    "journal": "Unpublished Manuscript",
+    "pdf": null,
+    "doi": null
+  },
+  {
+    "type": "misc",
+    "year": "2016",
+    "title": "Scalable Computation of Regularized Precision Matrices via Stochastic Optimization",
+    "authors": "Rahul Mazumder, Jie Chen, Yves Atchade",
+    "journal": "Unpublished Manuscript",
+    "pdf": null,
+    "doi": null
+  },
+  {
+    "type": "misc",
+    "year": "2017",
+    "title": "A Moreau-Yosida approximation for high-dimensional posterior distributions",
+    "authors": "Yves Atchade",
+    "journal": "Unpublished Manuscript",
+    "pdf": null,
+    "doi": null
+  }
+]

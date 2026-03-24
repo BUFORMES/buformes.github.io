@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People | FORMES</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div id="header-placeholder"></div>
+    <div id="hero-placeholder"></div>
+
+    
+
+    <main class="container">
+        <section id="active-section">
+            <h2 class="section-title">Principal Investigators</h2>
+            <div id="group-PI" class="people-grid"></div>
+
+            <h2 class="section-title">Postdoctoral Fellows</h2>
+            <div id="group-Postdoc" class="people-grid"></div>
+
+            <h2 class="section-title">PhD Students</h2>
+            <div id="group-PhD" class="people-grid"></div>
+
+            <h2 class="section-title">Graduate Students</h2>
+            <div id="group-Grad" class="people-grid"></div>
+
+            <h2 class="section-title">Undergraduate Students</h2>
+            <div id="group-Undergrad" class="people-grid"></div>
+        </section>
+
+        <hr class="section-divider">
+
+        <section id="alumni-section">
+            <h2 class="section-title">Lab Alumni</h2>
+            
+            <div class="filter-container">
+                <button class="filter-btn active" onclick="filterAlumni('all', event)">All</button>
+                <button class="filter-btn" onclick="filterAlumni('Postdoc', event)">Postdocs</button>
+                <button class="filter-btn" onclick="filterAlumni('PhD', event)">PhDs</button>
+                <button class="filter-btn" onclick="filterAlumni('Grad', event)">Graduate</button>
+                <button class="filter-btn" onclick="filterAlumni('Undergrad', event)">Undergraduate</button>
+            </div>
+
+            <div id="alumni-list" class="alumni-grid">
+                </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="script.js"></script>
+</body>
+</html>
