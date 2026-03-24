@@ -1101,7 +1101,7 @@ body.loaded {
 .post-article {
     max-width: 750px;
     margin: 60px auto;
-    line-height: 1.75;
+    line-height: 1.85; /* Slightly more space for academic reading */
     font-size: 1.1rem;
     color: #333;
 }
@@ -1109,9 +1109,31 @@ body.loaded {
 .post-header h1 {
     font-size: 2.5rem;
     margin: 10px 0 30px 0;
-    color: #003366; /* BU Blue or similar professional tone */
+    color: #003366; 
 }
 
+/* Footer Section & Back Link */
+.post-footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #eee; /* Light separator line */
+}
+
+.back-button {
+    display: inline-block;
+    color: #888; /* Soft gray, not dark/heavy */
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    color: #003366; /* Turns BU Blue on hover */
+    transform: translateX(-5px); /* Gentle nudge to the left */
+}
+
+/* Rest of your existing styles */
 .post-metadata {
     color: #666;
     text-transform: uppercase;
