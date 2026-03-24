@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Title | FORMES Blog</title>
+    
+    <link rel="stylesheet" href="../style.css">
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body class="blog-post-page">
+
+    <div id="header-placeholder"></div>
+
+    <main class="container post-article">
+        <header class="post-header">
+            <div class="post-metadata">
+                <span class="blog-date">March 24, 2026</span> | 
+                <span class="blog-author">By Indrajit Kalita</span>
+            </div>
+            <h1>How to Format Research Posts with LaTeX</h1>
+        </header>
+
+        <section class="post-content">
+            <p>This is the introduction. For researchers in the FORMES lab, use this space to explain the "why" behind your work.</p>
+
+            <h3>1. Writing Mathematics</h3>
+            <p>You can write inline math like this: $E = mc^2$. For complex equations that need their own line, use double dollar signs:</p>
+            
+            <p>
+                $$\mathcal{L}(\theta) = \sum_{i=1}^{n} \log p(y_i | x_i, \theta) + \log p(\theta)$$
+            </p>
+
+            <h3>2. Adding Figures</h3>
+            <figure>
+                <img src="../imgs/blog/your-figure.png" alt="Description of figure" class="blog-img-full">
+                <figcaption>Figure 1: Comparison of model skill scores.</figcaption>
+            </figure>
+
+            <h3>3. Code Snippets</h3>
+            <pre><code># Example Python snippet
+import torch
+model = torch.hub.load('pytorch/vision', 'resnet18', pretrained=True)
+            </code></pre>
+        </section>
+
+        <footer class="post-footer">
+            <hr>
+            <a href="../blog.html" class="back-button">&larr; Back to Blog Feed</a>
+        </footer>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="../script.js"></script>
+</body>
+</html>
