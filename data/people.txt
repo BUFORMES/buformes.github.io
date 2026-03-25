@@ -18,9 +18,9 @@ STATUS: Active
 CATEGORY: Postdoc
 NAME: Simin Shekarpaz
 ROLE: Postdoctoral Researcher, Mathematics and Statistics, Boston University
-IMAGE: 
-BIO: 
-LINK:
+IMAGE: imgs/people/Simin_pic.jpeg
+BIO: Scientific machine learning, Physics-informed deep learning,  Multi-scale/multi-physics modeling, Inverse problems
+LINK: https://scholar.google.com/citations?user=Bep3XMIAAAAJ&hl=en
 ---
 STATUS: Active
 CATEGORY: PhD
