@@ -27,8 +27,8 @@ CATEGORY: PhD
 NAME: Tianrui Hou
 ROLE: PhD Student, Mathematics and Statistics, Boston University
 IMAGE:
-BIO: 
-LINK:
+BIO: Bayesian Statistics, MCMC Sampling, Machine Learning, Deep Learning.
+LINK: www.linkedin.com/in/tianrui-hou-43062a141
 ---
 STATUS: Active
 CATEGORY: PhD
@@ -43,16 +43,17 @@ CATEGORY: PhD
 NAME: Lucia Vilallonga
 ROLE: PhD Student, Mathematics and Statistics, Boston University
 IMAGE:
-BIO: 
-LINK:
+BIO: Sequential Decision Making, Bayesian Statistics
+LINK: https://www.linkedin.com/in/yuke-zhang-aaa9181b7/
 ---
 STATUS: Active
 CATEGORY: PhD
 NAME: Sungjoon Park
 ROLE: PhD Student, Computing & Data Sciences, Boston University
-IMAGE:
-BIO: 
-LINK:
+IMAGE: imgs/people/SungjoonPark.jpeg
+BIO: SciML, Extreme Value Theory, Weather Forecasting
+LINK: https://www.linkedin.com/in/spark618
+
 ---
 STATUS: Active
 CATEGORY: PhD
