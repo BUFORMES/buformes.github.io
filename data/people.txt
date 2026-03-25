@@ -24,16 +24,16 @@ LINK:
 ---
 STATUS: Active
 CATEGORY: PhD
-NAME: Tianrui Hou, Mathematics and Statistics, Boston University
-ROLE: PhD Student
+NAME: Tianrui Hou
+ROLE: PhD Student, Mathematics and Statistics, Boston University
 IMAGE:
 BIO: 
 LINK:
 ---
 STATUS: Active
 CATEGORY: PhD
-NAME: Yuke Zhang, Computing & Data Sciences, Boston University
-ROLE: PhD Student
+NAME: Yuke Zhang
+ROLE: PhD Student, Computing & Data Sciences, Boston University
 IMAGE:
 BIO: 
 LINK:
