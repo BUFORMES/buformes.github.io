@@ -28,6 +28,7 @@ NAME: Tianrui Hou, Mathematics and Statistics, Boston University
 ROLE: PhD Student
 IMAGE:
 BIO: 
+LINK:
 ---
 STATUS: Active
 CATEGORY: PhD
@@ -35,6 +36,7 @@ NAME: Yuke Zhang, Computing & Data Sciences, Boston University
 ROLE: PhD Student
 IMAGE:
 BIO: 
+LINK:
 ---
 STATUS: Active
 CATEGORY: PhD
@@ -42,6 +44,7 @@ NAME: Lucia Vilallonga
 ROLE: PhD Student, Mathematics and Statistics, Boston University
 IMAGE:
 BIO: 
+LINK:
 ---
 STATUS: Active
 CATEGORY: PhD
@@ -49,6 +52,7 @@ NAME: Sungjoon Park
 ROLE: PhD Student, Computing & Data Sciences, Boston University
 IMAGE:
 BIO: 
+LINK:
 ---
 STATUS: Active
 CATEGORY: PhD
@@ -56,6 +60,7 @@ NAME: Harrison Ofori
 ROLE: PhD Student, Mathematics and Statistics, Boston University
 IMAGE:
 BIO: 
+LINK:
 ---
 
 STATUS: Past
