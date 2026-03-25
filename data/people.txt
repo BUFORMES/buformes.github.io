@@ -28,7 +28,7 @@ NAME: Tianrui Hou
 ROLE: PhD Student, Mathematics and Statistics, Boston University
 IMAGE:
 BIO: Bayesian Statistics, MCMC Sampling, Machine Learning, Deep Learning.
-LINK: www.linkedin.com/in/tianrui-hou-43062a141
+LINK: https://www.linkedin.com/in/tianrui-hou-43062a141/
 ---
 STATUS: Active
 CATEGORY: PhD
