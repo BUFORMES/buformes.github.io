@@ -34,17 +34,17 @@ STATUS: Active
 CATEGORY: PhD
 NAME: Yuke Zhang
 ROLE: PhD Student, Computing & Data Sciences, Boston University
-IMAGE:
-BIO: 
-LINK:
+IMAGE: imgs/people/Yuke.jpeg
+BIO: Sequential Decision Making, Bayesian Statistics
+LINK: https://www.linkedin.com/in/yuke-zhang-aaa9181b7/
 ---
 STATUS: Active
 CATEGORY: PhD
 NAME: Lucia Vilallonga
 ROLE: PhD Student, Mathematics and Statistics, Boston University
-IMAGE:
+IMAGE: imgs/people/Lucia.jpeg
 BIO: Sequential Decision Making, Bayesian Statistics
-LINK: https://www.linkedin.com/in/yuke-zhang-aaa9181b7/
+LINK: https://lucia-vilallonga.my.canva.site/
 ---
 STATUS: Active
 CATEGORY: PhD
