@@ -60,8 +60,8 @@ CATEGORY: PhD
 NAME: Harrison Ofori
 ROLE: PhD Student, Mathematics and Statistics, Boston University
 IMAGE:
-BIO: 
-LINK:
+BIO: Bayesian Statistics, Machine Learning
+LINK:https://www.linkedin.com/in/harrison-ofori-2787a01a1/3
 ---
 
 STATUS: Past
