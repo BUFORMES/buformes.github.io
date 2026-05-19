@@ -195,6 +195,7 @@ function loadHeroBanner() {
         "publications.html": { title: "Publications", sub: "Peer-reviewed journals, conferences, and pre-prints." },
         "projects.html": { title: "Our Research Projects", sub: "Developing foundations for statistical methods in environmental and climate sciences" },
         "courses.html": { title: "Teaching & Courses", sub: "Educating the next generation of data scientists and researchers" },
+        "bio.html": { title: "Prof. Yves Atchade", sub: "Professor of Mathematics and Statistics, Boston University" },
         "contact.html": { title: "Contact", sub: "Get in touch with the FORMES Lab" },
         "news.html": { title: "Lab News", sub: "Recent updates, awards, and milestones" },
         "blog.html": { title: "Lab Blog", sub: "Insights, field notes, and tutorials from our researchers." }
