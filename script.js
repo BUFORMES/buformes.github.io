@@ -50,19 +50,22 @@ async function loadPublications() {
         data.forEach((pub, index) => {
             //const pubNumber = data.length - index;
             let citation = `<span class="apa-authors">${pub.authors}</span> (<span class="apa-year">${pub.year}</span>). <span class="apa-title">${pub.title}</span>. `;
-            
+
             if (pub.journal) {
                 citation += `<span class="apa-journal"><em>${pub.journal}</em></span>. `;
+            }
+
+            if (pub.doi) {
+                citation += `<a href="${pub.doi}" target="_blank" class="btn-cite">DOI</a> `;
+            }
+            if (pub.pdf) {
+                citation += `<a href="${pub.pdf}" target="_blank" class="btn-cite"><i class="fas fa-file-pdf"></i> PDF</a>`;
             }
 
             container.innerHTML += `
                 <div class="pub-item" data-type="${pub.type || 'misc'}">
                     <div class="pub-details">
                         ${citation}
-                        <div class="pub-links">
-                            ${pub.doi ? `<a href="${pub.doi}" target="_blank" class="btn-cite">DOI</a>` : ''}
-                            ${pub.pdf ? `<a href="${pub.pdf}" target="_blank" class="btn-cite"><i class="fas fa-file-pdf"></i> PDF</a>` : ''}
-                        </div>
                     </div>
                 </div>`;
         });
