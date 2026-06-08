@@ -981,6 +981,10 @@ footer { background: #222; color: #fff; padding: 40px 0; text-align: center; mar
     gap: 10px;
 }
 
+.pub-cite-links {
+    margin-left: 1cm;
+}
+
 .btn-cite {
     font-size: 0.75rem;
     font-weight: bold;

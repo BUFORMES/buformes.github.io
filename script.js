@@ -55,12 +55,11 @@ async function loadPublications() {
                 citation += `<span class="apa-journal"><em>${pub.journal}</em></span>. `;
             }
 
-            if (pub.doi) {
-                citation += `<a href="${pub.doi}" target="_blank" class="btn-cite">DOI</a> `;
-            }
-            if (pub.pdf) {
-                citation += `<a href="${pub.pdf}" target="_blank" class="btn-cite"><i class="fas fa-file-pdf"></i> PDF</a>`;
-            }
+            const links = [
+                pub.doi ? `<a href="${pub.doi}" target="_blank" class="btn-cite">DOI</a>` : '',
+                pub.pdf ? `<a href="${pub.pdf}" target="_blank" class="btn-cite"><i class="fas fa-file-pdf"></i> PDF</a>` : ''
+            ].filter(Boolean).join(' ');
+            if (links) citation += `<span class="pub-cite-links">${links}</span>`;
 
             container.innerHTML += `
                 <div class="pub-item" data-type="${pub.type || 'misc'}">
