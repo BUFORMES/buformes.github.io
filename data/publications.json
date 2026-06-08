@@ -15,7 +15,7 @@
     "authors": "Indrajit Kalita, Lucia Vilallonga, Yves Atchade",
     "journal": "AI for the Earth Systems",
     "pdf": "pdfs/rainfall_ghana.pdf",
-    "doi": null
+    "doi": "https://doi.org/10.1175/aies-d-24-0116.1"
   },
   {
     "type": "article",
@@ -24,7 +24,7 @@
     "authors": "Pierre Jacob, Yves Atchade",
     "journal": "Handbook of MCMC, 2nd Edition",
     "pdf": "pdfs/umcmc_rev.pdf",
-    "doi": null
+    "doi": "https://doi.org/10.1201/9781003453420-17"
   },
   {
     "type": "article",
@@ -42,7 +42,7 @@
     "authors": "Prosper Dovonon, Firmin D. Tchatoka, Yves Atchade",
     "journal": "Journal of Econometrics",
     "pdf": "pdfs/DAD_2023.pdf",
-    "doi": null
+    "doi": "https://doi.org/10.1016/j.jeconom.2024.105723"
   },
   {
     "type": "inproceedings",
@@ -60,7 +60,7 @@
     "authors": "Qiuyun Zhu, Yves Atchade",
     "journal": "Journal of the American Statistical Association (JASA)",
     "pdf": "pdfs/sparseCCA.pdf",
-    "doi": null
+    "doi": "https://doi.org/10.1080/01621459.2023.2271199"
   },
   {
     "type": "inproceedings",
@@ -78,7 +78,7 @@
     "authors": "Liwei Wang, Yves Atchade",
     "journal": "Journal of the Royal Statistical Society: Series B (JRSS-B), 85, 1492–1516",
     "pdf": "pdfs/ssgld.pdf",
-    "doi": null
+    "doi": "https://doi.org/10.1093/jrsssb/qkad078"
   },
   {
     "type": "article",
@@ -87,7 +87,7 @@
     "authors": "Yves Atchade",
     "journal": "SIAM Journal on Mathematics of Data Science, 3, 854–872",
     "pdf": "pdfs/ApproxSG.pdf",
-    "doi": null
+    "doi": "https://doi.org/10.1137/19m1283082"
   },
   {
     "type": "article",
@@ -96,7 +96,7 @@
     "authors": "Pierre Jacob, John O'Leary, Yves Atchade",
     "journal": "Journal of the Royal Statistical Society: Series B (JRSS-B), with discussion",
     "pdf": "pdfs/umcmc.pdf",
-    "doi": null
+    "doi": "https://doi.org/10.1111/rssb.12336"
   },
   {
     "type": "article",
@@ -114,7 +114,7 @@
     "authors": "Yves Atchade, Joonha Park",
     "journal": "Statistics and Computing, 30, 1325–1345",
     "pdf": "pdfs/smcmc.pdf",
-    "doi": null
+    "doi": "https://doi.org/10.1007/s11222-020-09948-4"
   },
   {
     "type": "article",
@@ -123,7 +123,7 @@
     "authors": "Yves Atchade, Dao Nguyen, Perry de Valpine, Daniel Turek, Nicholas Michaud, Christopher Paciorek",
     "journal": "Bayesian Analysis, 15(4), 1323–1343",
     "pdf": "pdfs/auto_amcmc.pdf",
-    "doi": null
+    "doi": "https://doi.org/10.1214/19-ba1190"
   },
   {
     "type": "article",
@@ -132,7 +132,7 @@
     "authors": "Yves Atchade, Prosper Dovonon",
     "journal": "Econometric Reviews, 39, 612–648",
     "pdf": "pdfs/EfficiencyGMM.pdf",
-    "doi": null
+    "doi": "https://doi.org/10.1080/07474938.2019.1701809"
   },
   {
     "type": "article",
@@ -141,7 +141,7 @@
     "authors": "Yves Atchade, Sandipan Roy, George Michailidis",
     "journal": "Journal of Computational and Graphical Statistics (JCGS), 28(3)",
     "pdf": "pdfs/dac.pdf",
-    "doi": null
+    "doi": "https://doi.org/10.1080/10618600.2018.1554486"
   },
   {
     "type": "article",
@@ -150,7 +150,7 @@
     "authors": "Yves Atchade",
     "journal": "Journal of Multivariate Analysis, 173, 656–671",
     "pdf": "pdfs/graph_models.pdf",
-    "doi": null
+    "doi": "https://doi.org/10.1016/j.jmva.2019.03.005"
   },
   {
     "type": "inproceedings",
@@ -159,7 +159,7 @@
     "authors": "Yves Atchade, Gersende Fort, Laurent Risser, Eric Moulines",
     "journal": "IEEE Statistical Signal Processing Workshop (SSP)",
     "pdf": "pdfs/FRAM.pdf",
-    "doi": null
+    "doi": "https://doi.org/10.1109/ssp.2018.8450740"
   },
   {
     "type": "article",
@@ -177,7 +177,7 @@
     "authors": "Yves Atchade",
     "journal": "Annals of Statistics, 45, 2248–2273",
     "pdf": "pdfs/qp_contract_v2.pdf",
-    "doi": null
+    "doi": "https://doi.org/10.1214/16-aos1526"
   },
   {
     "type": "article",
@@ -195,7 +195,7 @@
     "authors": "Yves Atchade, Chai Chye Yee",
     "journal": "Communications in Statistics – Theory and Methods, 46, 7672–7691",
     "pdf": "pdfs/sbl.pdf",
-    "doi": null
+    "doi": "https://doi.org/10.1080/03610926.2016.1158837"
   },
   {
     "type": "article",
@@ -204,7 +204,7 @@
     "authors": "Yves Atchade, Sandipan Roy, George Michailidis",
     "journal": "Journal of the Royal Statistical Society: Series B (JRSS-B), 79, 1187–1206",
     "pdf": "pdfs/change_point.pdf",
-    "doi": null
+    "doi": "https://doi.org/10.1111/rssb.12205"
   },
   {
     "type": "article",
@@ -213,7 +213,7 @@
     "authors": "Yves Atchade",
     "journal": "Bernoulli, 22(3), 1808–1838",
     "pdf": "pdfs/mcmc_ci.pdf",
-    "doi": null
+    "doi": "https://doi.org/10.3150/15-bej712"
   },
   {
     "type": "article",
@@ -222,7 +222,7 @@
     "authors": "Yves Atchade, Mark Girolami, Anne-Marie Lyne, Heiko Strathmann, Daniel Simpson",
     "journal": "Statistical Science, 30(4), 443–467",
     "pdf": "pdfs/Roulette.pdf",
-    "doi": null
+    "doi": "https://doi.org/10.1214/15-sts523"
   },
   {
     "type": "article",
@@ -231,7 +231,7 @@
     "authors": "Edward Ionides, Dao Nguyen, Yves Atchade, Stilian Stoev, Aaron King",
     "journal": "Proceedings of the National Academy of Sciences (PNAS), 112(3), 719–724",
     "pdf": "pdfs/if2.pdf",
-    "doi": null
+    "doi": "https://doi.org/10.1073/pnas.1410597112"
   },
   {
     "type": "article",
@@ -240,7 +240,7 @@
     "authors": "Yves Atchade, Yizao Wang",
     "journal": "Journal of Applied Probability, 52, 811–825",
     "pdf": "pdfs/arate.pdf",
-    "doi": null
+    "doi": "https://doi.org/10.1239/jap/1445543848"
   },
   {
     "type": "article",
@@ -249,7 +249,7 @@
     "authors": "Yves Atchade",
     "journal": "Electronic Journal of Statistics, 8(2), 2242–2263",
     "pdf": "pdfs/graphRev.pdf",
-    "doi": null
+    "doi": "https://doi.org/10.1214/14-ejs946"
   },
   {
     "type": "article",
@@ -258,7 +258,7 @@
     "authors": "Yves Atchade, Matias Cattaneo",
     "journal": "Stochastic Processes and their Applications, 124(1), 646–677",
     "pdf": "pdfs/UstatLim.pdf",
-    "doi": null
+    "doi": "https://doi.org/10.1016/j.spa.2013.09.001"
   },
   {
     "type": "article",
@@ -267,7 +267,7 @@
     "authors": "Yves Atchade, George Michailidis",
     "journal": "International Statistical Review, 82(1), 71–75",
     "pdf": "pdfs/discussionLangeFinal.pdf",
-    "doi": null
+    "doi": "https://doi.org/10.1111/insr.12033"
   },
   {
     "type": "article",
@@ -285,7 +285,7 @@
     "authors": "Yves Atchade, Jing Wang, Anocha Aribarg",
     "journal": "Marketing Science, 32(6), 977–997",
     "pdf": "pdfs/Jing2.pdf",
-    "doi": null
+    "doi": "https://doi.org/10.1287/mksc.2013.0811"
   },
   {
     "type": "article",
@@ -294,7 +294,7 @@
     "authors": "Yves Atchade, Nicolas Lartillot, Christian Robert",
     "journal": "Brazilian Journal of Probability and Statistics, 27, 416–436",
     "pdf": "pdfs/ncmcmc2.pdf",
-    "doi": null
+    "doi": "https://doi.org/10.1214/11-bjps174"
   },
   {
     "type": "article",
@@ -303,7 +303,7 @@
     "authors": "Yves Atchade, Gersende Fort",
     "journal": "Bernoulli, 18, 975–1001",
     "pdf": "pdfs/AtchadeFortII.pdf",
-    "doi": null
+    "doi": "https://doi.org/10.3150/11-bej360"
   },
   {
     "type": "article",
@@ -312,7 +312,7 @@
     "authors": "Edward Ionides, Anindya Bhadra, Yves Atchade, Aaron King",
     "journal": "Annals of Statistics, 39, 1776–1802",
     "pdf": null,
-    "doi": null
+    "doi": "https://doi.org/10.1214/11-aos886"
   },
   {
     "type": "article",
@@ -321,7 +321,7 @@
     "authors": "Yves Atchade",
     "journal": "Annals of Statistics, 39(2), 990–1011",
     "pdf": "pdfs/AV.pdf",
-    "doi": null
+    "doi": "https://doi.org/10.1214/10-aos828"
   },
   {
     "type": "article",
@@ -330,7 +330,7 @@
     "authors": "Yves Atchade, Jeff Rosenthal, Gareth Roberts",
     "journal": "Statistics and Computing, 21(4), 555–568",
     "pdf": "pdfs/mcmcmc.pdf",
-    "doi": null
+    "doi": "https://doi.org/10.1007/s11222-010-9192-1"
   },
   {
     "type": "article",
@@ -339,7 +339,7 @@
     "authors": "Yves Atchade",
     "journal": "Statistics and Computing, 21(4), 463–473",
     "pdf": "pdfs/EB.pdf",
-    "doi": null
+    "doi": "https://doi.org/10.1007/s11222-010-9182-3"
   },
   {
     "type": "article",
@@ -348,7 +348,7 @@
     "authors": "Yves Atchade",
     "journal": "Annals of Applied Probability, 20(3), 116–154",
     "pdf": "pdfs/eff.pdf",
-    "doi": null
+    "doi": "https://doi.org/10.1214/09-aap636"
   },
   {
     "type": "article",
@@ -357,7 +357,7 @@
     "authors": "Yves Atchade, Gersende Fort",
     "journal": "Bernoulli, 16, 116–154",
     "pdf": "pdfs/AtchadeFortI.pdf",
-    "doi": null
+    "doi": "https://doi.org/10.3150/09-bej199"
   },
   {
     "type": "article",
@@ -384,7 +384,7 @@
     "authors": "Yves Atchade, Christophe Andrieu",
     "journal": "Electronic Communications in Probability, 12, 336–349",
     "pdf": "pdfs/effamcmc.pdf",
-    "doi": null
+    "doi": "https://doi.org/10.1214/ecp.v12-1320"
   },
   {
     "type": "article",
@@ -393,7 +393,7 @@
     "authors": "Yves Atchade, Francois Perron",
     "journal": "Statistics, 41, 77–84",
     "pdf": "pdfs/GeoErgoRev1.pdf",
-    "doi": null
+    "doi": "https://doi.org/10.1080/10485250601033214"
   },
   {
     "type": "article",
@@ -402,7 +402,7 @@
     "authors": "Yves Atchade, Jun Liu",
     "journal": "Annals of Statistics, 34(4)",
     "pdf": "pdfs/discKZW.pdf",
-    "doi": null
+    "doi": "https://doi.org/10.1214/009053606000000489"
   },
   {
     "type": "article",
@@ -411,7 +411,7 @@
     "authors": "Yves Atchade",
     "journal": "Methodology and Computing in Applied Probability, 8, 235–254",
     "pdf": "pdfs/atmala.pdf",
-    "doi": null
+    "doi": "https://doi.org/10.1007/s11009-006-8550-0"
   },
   {
     "type": "article",
@@ -420,7 +420,7 @@
     "authors": "Yves Atchade, Jeff Rosenthal",
     "journal": "Bernoulli, 11, 815–828",
     "pdf": "pdfs/amcmc.pdf",
-    "doi": null
+    "doi": "https://doi.org/10.3150/bj/1130077595"
   },
   {
     "type": "article",
