@@ -64,9 +64,7 @@ async function loadPublications() {
 
             container.innerHTML += `
                 <div class="pub-item" data-type="${pub.type || 'misc'}">
-                    <div class="pub-details">
-                        ${citation}
-                    </div>
+                    <div class="pub-details">${citation}</div>
                 </div>`;
         });
     } catch (err) {
