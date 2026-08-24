@@ -829,9 +829,16 @@ footer { background: #222; color: #fff; padding: 40px 0; text-align: center; mar
 
 .people-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* Fixed 4-up so the eight active members read as two rows. */
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
     margin-bottom: 50px;
+}
+@media (max-width: 900px) {
+    .people-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 520px) {
+    .people-grid { grid-template-columns: 1fr; }
 }
 
 .person-card {

@@ -144,7 +144,10 @@ async function loadPeople() {
             });
 
             if (data.STATUS === 'Active') {
-                const container = document.getElementById(`group-${data.CATEGORY}`);
+                // One combined grid when the page provides it (people.html),
+                // otherwise fall back to per-category containers.
+                const container = document.getElementById('group-all')
+                    || document.getElementById(`group-${data.CATEGORY}`);
                 if (container) {
                     const initials = data.NAME ? data.NAME.split(' ').map(n => n[0]).join('').toUpperCase() : "LM";
                     const imageSrc = (data.IMAGE && data.IMAGE !== '') 
@@ -159,7 +162,7 @@ async function loadPeople() {
                             <h3>${data.NAME}</h3>
                             <p class="person-role">${data.ROLE || ''}</p>
                             ${data.BIO ? `<p class="person-bio">${data.BIO}</p>` : ''}
-                            ${data.LINK ? `<a href="${data.LINK}" target="_blank" class="btn-small">Profile</a>` : ''}
+                            ${data.LINK ? `<a href="${data.LINK}"${/^https?:\/\//.test(data.LINK) ? ' target="_blank" rel="noopener"' : ''} class="btn-small">Profile</a>` : ''}
                         </div>`;
                 }
             } else if (data.STATUS === 'Past') {

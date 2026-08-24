@@ -4,7 +4,7 @@ NAME: Prof. Yves Atchade
 ROLE: Professor of Mathematics and Statistics
 IMAGE: imgs/people/PI.jpeg
 BIO: Professor and Duan Family Faculty Fellow of Data Science, Boston University
-LINK: https://www.bu.edu/math/people/faculty/yves-atchade/
+LINK: bio.html
 ---
 STATUS: Active
 CATEGORY: Postdoc
@@ -28,7 +28,7 @@ NAME: Tianrui Hou
 ROLE: PhD Student, Mathematics and Statistics, Boston University
 IMAGE:
 BIO: Bayesian Statistics, MCMC Sampling, Machine Learning, Deep Learning.
-LINK: https://www.linkedin.com/in/tianrui-hou-43062a141/
+LINK: https://www.bu.edu/math/profile/tianrui-hou/
 ---
 STATUS: Active
 CATEGORY: PhD
@@ -36,7 +36,7 @@ NAME: Yuke Zhang
 ROLE: PhD Student, Computing & Data Sciences, Boston University
 IMAGE: imgs/people/Yuke.jpeg
 BIO: Sequential Decision Making, Bayesian Statistics
-LINK: https://www.linkedin.com/in/yuke-zhang-aaa9181b7/
+LINK: https://www.bu.edu/cds-faculty/profile/yuke-zhang/
 ---
 STATUS: Active
 CATEGORY: PhD
@@ -52,7 +52,7 @@ NAME: Sungjoon Park
 ROLE: PhD Student, Computing & Data Sciences, Boston University
 IMAGE: imgs/people/SungjoonPark.jpeg
 BIO: SciML, Extreme Value Theory, Weather Forecasting
-LINK: https://www.linkedin.com/in/spark618
+LINK: https://www.bu.edu/cds-faculty/profile/sungjoon-park/
 
 ---
 STATUS: Active
@@ -61,7 +61,7 @@ NAME: Harrison Ofori
 ROLE: PhD Student, Mathematics and Statistics, Boston University
 IMAGE: imgs/people/Harrison.jpg
 BIO: Bayesian Statistics, Machine Learning
-LINK: https://www.linkedin.com/in/harrison-ofori-2787a01a1/3
+LINK: https://www.bu.edu/math/profile/harrison-ofori/
 ---
 
 STATUS: Past
