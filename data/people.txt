@@ -8,7 +8,7 @@ LINK: bio.html
 STATUS: Active
 CATEGORY: Postdoc
 NAME: Indrajit Kalita
-ROLE: Postdoc, CDS
+ROLE: Research assistant Prof, Math and Stats
 IMAGE: imgs/people/PD_indra.jpg
 LINK: https://indrajitkalita.com/
 ---
