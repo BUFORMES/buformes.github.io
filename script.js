@@ -133,6 +133,7 @@ async function loadPeople() {
         const response = await fetch('data/people.txt');
         const text = await response.text();
         const entries = text.split('---').filter(e => e.trim());
+        const alumni = [];
 
         entries.forEach(entry => {
             const data = {};
@@ -166,20 +167,30 @@ async function loadPeople() {
                         </div>`;
                 }
             } else if (data.STATUS === 'Past') {
-                const alumniList = document.getElementById('alumni-list');
-                if (alumniList) {
-                    // The dash separates the name from a role, so it only
-                    // appears when there is one; the year stands on its own.
-                    const role = (data.ROLE || '').trim();
-                    const year = (data.YEAR || '').trim();
-                    alumniList.innerHTML += `
-                        <div class="alumni-item" data-category="${data.CATEGORY}">
-                            <strong>${data.NAME}</strong>${role ? ` — ${role}` : ''}${year ? ` (${year})` : ''}
-                            <p>${data.DESC || ''}</p>
-                        </div>`;
-                }
+                alumni.push(data);
             }
         });
+
+        // Most recent first. The sort key is the latest year mentioned, so
+        // ranges ("2021-2025") and notes ("2023 (Summer)") both work; equal
+        // years keep their order in the file.
+        const alumniList = document.getElementById('alumni-list');
+        if (alumniList) {
+            const latestYear = p => Math.max(0, ...(String(p.YEAR || '').match(/\d{4}/g) || []).map(Number));
+            alumni.sort((a, b) => latestYear(b) - latestYear(a));
+
+            alumniList.innerHTML = alumni.map(data => {
+                // The dash separates the name from a role, so it only
+                // appears when there is one; the year stands on its own.
+                const role = (data.ROLE || '').trim();
+                const year = (data.YEAR || '').trim();
+                const desc = (data.DESC || '').trim();
+                return `
+                        <div class="alumni-item" data-category="${data.CATEGORY}">
+                            <strong>${data.NAME}</strong>${role ? ` — ${role}` : ''}${year ? ` (${year})` : ''}${desc ? ` <span class="alumni-note">· ${desc}</span>` : ''}
+                        </div>`;
+            }).join('');
+        }
     } catch (err) {
         console.error("Error loading people:", err);
     }

@@ -903,16 +903,21 @@ footer { background: #222; color: #fff; padding: 40px 0; text-align: center; mar
 .alumni-grid {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 8px;
     margin-top: 20px;
 }
 
+/* One line per alum, so the row only needs enough padding to
+   clear the text. */
 .alumni-item {
     background: #fdfdfd;
     border-left: 4px solid #cc0000; /* BU Red accent */
-    padding: 15px 20px;
+    padding: 8px 16px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    line-height: 1.5;
 }
+
+.alumni-note { color: var(--text-light); }
 
 
 /* News Flash Styling */
@@ -1395,7 +1400,8 @@ pre {
 
 /* =====================================================
    HOME PAGE — single-screen fit (no scrolling)
-   Spacing AND type scale with viewport height (vh) so the
+   Spacing scales with viewport height (vh); type stays at the
+   site's base sizes so the page matches the others.
    page fills a tall window and collapses to fit a short one
    without ever scrolling. Scoped to body.home; other pages
    keep their own rhythm.
@@ -1425,12 +1431,7 @@ body.home .hero-banner { height: clamp(64px, 14.5vh, 188px); }
 /* The banner text scales with the band, so the band is free to
    shrink on short windows instead of being propped open by a
    fixed 3rem headline. */
-body.home .hero-banner h1 {
-    font-size: clamp(1.15rem, 3.5vh, 3rem);
-    letter-spacing: clamp(0.5px, 0.25vh, 2px);
-}
 body.home .hero-banner p {
-    font-size: clamp(0.72rem, 1.5vh, 1.3rem);
     margin-top: clamp(3px, 0.9vh, 15px);
 }
 
@@ -1446,7 +1447,6 @@ body.home .section-divider { margin: clamp(4px, 0.82vh, 14px) 0; }
 body.home .section-title {
     padding-top: 0;
     margin-bottom: clamp(8px, 1.53vh, 30px);
-    font-size: clamp(1.1rem, 1.53vh, 1.85rem);
 }
 body.home .section-title::before { margin-bottom: clamp(5px, 0.89vh, 16px); }
 
@@ -1460,29 +1460,24 @@ body.home .about-photo {
     height: clamp(64px, 9.59vh, 130px);
 }
 body.home .about-summary p {
-    font-size: clamp(0.86rem, 1.16vh, 1.05rem);
     line-height: 1.6;
 }
 
 body.home .research-cards { grid-template-columns: repeat(4, 1fr); gap: clamp(10px, 1.4vh, 20px); margin-bottom: 0; }
 body.home .research-card { padding: clamp(8px, 1.4vh, 22px) clamp(14px, 1.28vh, 24px); }
 body.home .research-card h3 {
-    font-size: clamp(0.78rem, 0.96vh, 0.95rem);
     margin-bottom: clamp(4px, 0.57vh, 8px);
 }
 body.home .research-card p {
-    font-size: clamp(0.74rem, 0.93vh, 0.9rem);
     line-height: 1.55;
 }
 
 body.home .join-us-box { padding: clamp(10px, 1.92vh, 36px) clamp(20px, 1.92vh, 40px); }
 body.home .join-us-box h2 {
     margin: 0 0 clamp(5px, 0.77vh, 12px);
-    font-size: clamp(1.02rem, 1.4vh, 1.5rem);
 }
 body.home .join-us-box p {
     margin: 0;
-    font-size: clamp(0.86rem, 1.09vh, 1.02rem);
 }
 
 body.home .site-footer {
@@ -1491,7 +1486,6 @@ body.home .site-footer {
 }
 body.home .footer-logo { max-height: clamp(22px, 3.2vh, 46px); }
 body.home .site-footer p,
-body.home .footer-link-item span { font-size: clamp(0.72rem, 0.89vh, 0.9rem); }
 
 /* Narrow windows: a single screen isn't achievable without
    squeezing four cards into a phone width, so revert to the
