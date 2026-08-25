@@ -168,9 +168,13 @@ async function loadPeople() {
             } else if (data.STATUS === 'Past') {
                 const alumniList = document.getElementById('alumni-list');
                 if (alumniList) {
+                    // The dash separates the name from a role, so it only
+                    // appears when there is one; the year stands on its own.
+                    const role = (data.ROLE || '').trim();
+                    const year = (data.YEAR || '').trim();
                     alumniList.innerHTML += `
                         <div class="alumni-item" data-category="${data.CATEGORY}">
-                            <strong>${data.NAME}</strong> — ${data.ROLE || ''} (${data.YEAR || ''})
+                            <strong>${data.NAME}</strong>${role ? ` — ${role}` : ''}${year ? ` (${year})` : ''}
                             <p>${data.DESC || ''}</p>
                         </div>`;
                 }

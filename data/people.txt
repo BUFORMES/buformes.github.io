@@ -106,22 +106,36 @@ DESC: Research Scientist, Jackson Labs
 YEAR: 2018-2019
 ---
 STATUS: Past
+CATEGORY: Undergrad/Master
+NAME: Colin Bobocea
+ROLE: Undergrad/Master
+DESC: master summer research
+YEAR: 2025-2026
+---
+STATUS: Past
+CATEGORY: Undergrad/Master
+NAME: Brian Xiang
+ROLE: Undergrad/Master
+DESC: summer research
+YEAR: 2025-2026
+---
+STATUS: Past
 CATEGORY: Undergrad
 NAME: Nils Cazemier
-ROLE: Ecole Polytechnique, Palaiseau, France. Visiting MA Student.
-DESC: 
+ROLE: Ecole Polytechnique, Palaiseau, France.
+DESC: Visiting MA Student.
 YEAR: 2023 (Summer)
 ---
 STATUS: Past
 CATEGORY: Undergrad
 NAME: Peiyang Liu
 ROLE: 
-DESC: 
+DESC: Undergrad research
 YEAR: 2023-2024
 ---
 STATUS: Past
 CATEGORY: Undergrad
 NAME: Andrew Furlong
 ROLE: 
-DESC: 
+DESC: Undergrad research
 YEAR: 2019
