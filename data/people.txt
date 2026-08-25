@@ -158,32 +158,76 @@ CATEGORY: PhD
 NAME: Jun Guo
 ROLE: PhD student, Statistics Umich.
 DESC: 
-YEAR: 2018
+YEAR: 2013-2018
 ---
 STATUS: Past
 CATEGORY: PhD
 NAME: Chia Chye Yee
 ROLE: PhD student, Statistics Umich.
 DESC: University of Michigan
-YEAR: 2016
+YEAR: 2012-2016
 ---
 STATUS: Past
 CATEGORY: PhD
 NAME: Sandipan Roy
 ROLE: PhD student, Statistics Umich.
 DESC: Associate Professor, University of Bath
-YEAR: 2015
+YEAR: 2011-2015
 ---
 STATUS: Past
 CATEGORY: PhD
 NAME: Yang Yang
 ROLE: PhD student, Statistics Umich.
 DESC: 
-YEAR: 2011
+YEAR: 2007-2011
 ---
 STATUS: Past
 CATEGORY: PhD
 NAME: Jing Wang
 ROLE: PhD student, Statistics Umich.
 DESC: Director of data science, Google
-YEAR: 2011
+YEAR: 2007-2011
+
+---
+STATUS: Past
+CATEGORY: Undergrad
+NAME: Ao Wang
+ROLE: Summer research
+DESC: 
+YEAR: 2018
+---
+STATUS: Past
+CATEGORY: Undergrad
+NAME: Tianyou Luo
+ROLE: Summer research
+DESC: 
+YEAR: 2017
+---
+STATUS: Past
+CATEGORY: Undergrad
+NAME: Jingxue Xu
+ROLE: Summer research
+DESC: 
+YEAR: 2016
+---
+STATUS: Past
+CATEGORY: Master
+NAME: Joseph Leland Bybee
+ROLE: Research assistant
+DESC: Assistant Prof. University of Chicago
+YEAR: 2016
+---
+STATUS: Past
+CATEGORY: undergrad
+NAME: Miao Wang
+ROLE: Research assistant
+DESC: 
+YEAR: 2016
+---
+STATUS: Past
+CATEGORY: undergrad
+NAME: Yusheng Jiang
+ROLE: Research assistant
+DESC: 
+YEAR: 2016
+
