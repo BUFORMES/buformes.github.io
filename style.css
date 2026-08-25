@@ -1097,7 +1097,8 @@ body.loaded {
     background: url('imgs/hero-bg.png') no-repeat center center;
     background-size: cover;
     /* Optional: background-attachment: fixed; creates a parallax effect */
-    height: 188px; 
+    /* Scales with the viewport, never shorter than the banner text. */
+    height: clamp(96px, 14.5vh, 188px);
     width: 100%;
     display: flex;
     align-items: center;
@@ -1427,7 +1428,6 @@ body.home main.container > :last-child { margin-bottom: auto; }
 
 body.home .navbar { padding: clamp(6px, 0.96vh, 22px) 0; }
 
-body.home .hero-banner { height: clamp(64px, 14.5vh, 188px); }
 /* The banner text scales with the band, so the band is free to
    shrink on short windows instead of being propped open by a
    fixed 3rem headline. */
@@ -1501,7 +1501,7 @@ body.home .site-footer p,
 /* Short windows: compress the banner and the vertical gaps
    harder, rather than shrinking the banner on every screen. */
 @media (min-width: 820px) and (max-height: 720px) {
-    body.home .hero-banner { height: clamp(60px, 10vh, 110px); }
+    body.home .hero-banner { height: clamp(96px, 12vh, 140px); }
     body.home .about-summary,
     body.home .research-focus { padding: clamp(8px, 1.6vh, 20px) 0; }
     body.home .section-divider { margin: 4px 0; }
