@@ -59,50 +59,50 @@ LINK: https://www.bu.edu/math/profile/harrison-ofori/
 STATUS: Past
 CATEGORY: PhD
 NAME: Xinru Liu
-ROLE: PhD Student, Mathematics and Statistics, Boston University
-DESC: Now at Microsoft.
+ROLE: PhD Student, Math and Stats
+DESC: Microsoft.
 YEAR: 2021-2025
 ---
 STATUS: Past
 CATEGORY: PhD
 NAME: Yi Sun
-ROLE: PhD Student, Mathematics and Statistics, Boston University
-DESC: Now at Amazon
+ROLE: PhD Student, Math and Stats
+DESC: Amazon
 YEAR: 2021-2025
 ---
 STATUS: Past
 CATEGORY: PhD
 NAME: Liwei Wang
-ROLE: PhD Student, Mathematics and Statistics, Boston University
+ROLE: PhD Student, Math and Stats
 DESC: 
 YEAR: 2019-2023
 ---
 STATUS: Past
 CATEGORY: PhD
 NAME: Qiuyun Zhu
-ROLE: PhD Student, Mathematics and Statistics, Boston University
-DESC: 
+ROLE: PhD Student, Math and Stats
+DESC: Assistant Prof. University of Iowa
 YEAR: 2019-2023
 ---
 STATUS: Past
 CATEGORY: PhD
 NAME: Keer Jiang
-ROLE: PhD Student, Mathematics and Statistics, Boston University
-DESC: 
+ROLE: PhD Student, Math and Stats
+DESC: Amazon
 YEAR: 2018-2022
 ---
 STATUS: Past
 CATEGORY: Postdoc
 NAME: Joonha Park
-ROLE: 
-DESC: 
+ROLE: Postdoc, Math and Stats
+DESC: Assistant Prof. Univ. of Kansas Lawrence
 YEAR: 2018-2020
 ---
 STATUS: Past
 CATEGORY: Postdoc
 NAME: Gautam Sabnis
-ROLE: 
-DESC: 
+ROLE: Postdoc, Math and Stats
+DESC: Research Scientist, Jackson Labs
 YEAR: 2018-2019
 ---
 STATUS: Past
