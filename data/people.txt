@@ -192,42 +192,42 @@ YEAR: 2007-2011
 STATUS: Past
 CATEGORY: Undergrad
 NAME: Ao Wang
-ROLE: Summer research
+ROLE: Summer undergraduate research
 DESC: 
 YEAR: 2018
 ---
 STATUS: Past
 CATEGORY: Undergrad
 NAME: Tianyou Luo
-ROLE: Summer research
+ROLE: Summer undergraduate research
 DESC: 
 YEAR: 2017
 ---
 STATUS: Past
 CATEGORY: Undergrad
 NAME: Jingxue Xu
-ROLE: Summer research
+ROLE: Summer undergraduate research
 DESC: 
 YEAR: 2016
 ---
 STATUS: Past
 CATEGORY: Master
 NAME: Joseph Leland Bybee
-ROLE: Research assistant
+ROLE: Master research assistant
 DESC: Assistant Prof. University of Chicago
 YEAR: 2016
 ---
 STATUS: Past
 CATEGORY: undergrad
 NAME: Miao Wang
-ROLE: Research assistant
+ROLE: Undergraduate research
 DESC: 
 YEAR: 2016
 ---
 STATUS: Past
 CATEGORY: undergrad
 NAME: Yusheng Jiang
-ROLE: Research assistant
+ROLE: Summer undergraduate research
 DESC: 
 YEAR: 2016
 
