@@ -143,7 +143,7 @@ STATUS: Past
 CATEGORY: PhD
 NAME: Anwesha Bhattacharyya
 ROLE: PhD student, Statistics Umich.
-DESC: Bank of America
+DESC: Wells Fargo
 YEAR: 2020
 ---
 STATUS: Past
@@ -164,7 +164,7 @@ STATUS: Past
 CATEGORY: PhD
 NAME: Chia Chye Yee
 ROLE: PhD student, Statistics Umich.
-DESC: University of Michigan
+DESC: Senior Statistician, University of Michigan
 YEAR: 2012-2016
 ---
 STATUS: Past
