@@ -1,66 +1,58 @@
 STATUS: Active
 CATEGORY: PI
 NAME: Prof. Yves Atchade
-ROLE: Professor of Mathematics and Statistics
+ROLE: Professor
 IMAGE: imgs/people/PI.jpeg
-BIO: Professor and Duan Family Faculty Fellow of Data Science, Boston University
 LINK: bio.html
 ---
 STATUS: Active
 CATEGORY: Postdoc
 NAME: Indrajit Kalita
-ROLE: Postdoctoral Researcher, Computing & Data Sciences, Boston University
+ROLE: Postdoc, CDS
 IMAGE: imgs/people/PD_indra.jpg
-BIO: Deep Learning, Computer Vision, Data Analytics, Remote Sensing, Weather Forecasting
 LINK: https://indrajitkalita.com/
 ---
 STATUS: Active
 CATEGORY: Postdoc
 NAME: Simin Shekarpaz
-ROLE: Postdoctoral Researcher, Mathematics and Statistics, Boston University
+ROLE: Visiting scholar, Math and Stats
 IMAGE: imgs/people/Simin_pic.jpeg
-BIO: Scientific machine learning, Physics-informed deep learning,  Multi-scale/multi-physics modeling, Inverse problems
 LINK: https://scholar.google.com/citations?user=Bep3XMIAAAAJ&hl=en
 ---
 STATUS: Active
 CATEGORY: PhD
 NAME: Tianrui Hou
-ROLE: PhD Student, Mathematics and Statistics, Boston University
+ROLE: PhD student, Math and Stats
 IMAGE:
-BIO: Bayesian Statistics, MCMC Sampling, Machine Learning, Deep Learning.
 LINK: https://www.bu.edu/math/profile/tianrui-hou/
 ---
 STATUS: Active
 CATEGORY: PhD
 NAME: Yuke Zhang
-ROLE: PhD Student, Computing & Data Sciences, Boston University
+ROLE: PhD student, CDS
 IMAGE: imgs/people/Yuke.jpeg
-BIO: Sequential Decision Making, Bayesian Statistics
 LINK: https://www.bu.edu/cds-faculty/profile/yuke-zhang/
 ---
 STATUS: Active
 CATEGORY: PhD
 NAME: Lucia Vilallonga
-ROLE: PhD Student, Mathematics and Statistics, Boston University
+ROLE: PhD student, Math and Stats
 IMAGE: imgs/people/Lucia.jpeg
-BIO: Sequential Decision Making, Bayesian Statistics
 LINK: https://lucia-vilallonga.my.canva.site/
 ---
 STATUS: Active
 CATEGORY: PhD
 NAME: Sungjoon Park
-ROLE: PhD Student, Computing & Data Sciences, Boston University
+ROLE: PhD student, CDS
 IMAGE: imgs/people/SungjoonPark.jpeg
-BIO: SciML, Extreme Value Theory, Weather Forecasting
 LINK: https://www.bu.edu/cds-faculty/profile/sungjoon-park/
 
 ---
 STATUS: Active
 CATEGORY: PhD
 NAME: Harrison Ofori
-ROLE: PhD Student, Mathematics and Statistics, Boston University
+ROLE: PhD student, Math and Stats
 IMAGE: imgs/people/Harrison.jpg
-BIO: Bayesian Statistics, Machine Learning
 LINK: https://www.bu.edu/math/profile/harrison-ofori/
 ---
 
