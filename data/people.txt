@@ -115,28 +115,28 @@ STATUS: Past
 CATEGORY: Undergrad/Master
 NAME: Colin Bobocea
 ROLE: Undergrad/Master
-DESC: master summer research
+DESC: 
 YEAR: 2025-2026
 ---
 STATUS: Past
 CATEGORY: Undergrad/Master
 NAME: Brian Xiang
 ROLE: Undergrad/Master
-DESC: summer research
+DESC: 
 YEAR: 2025-2026
 ---
 STATUS: Past
 CATEGORY: Undergrad
 NAME: Nils Cazemier
 ROLE: Ecole Polytechnique, Palaiseau, France.
-DESC: Visiting MA Student.
+DESC: 
 YEAR: 2023
 ---
 STATUS: Past
 CATEGORY: Undergrad
 NAME: Peiyang Liu
-ROLE: 
-DESC: Undergrad research
+ROLE: Undergrad research
+DESC: 
 YEAR: 2023-2024
 ---
 STATUS: Past
