@@ -57,6 +57,7 @@ async function loadPublications() {
 
             const links = [
                 pub.doi ? `<a href="${pub.doi}" target="_blank" class="btn-cite">DOI</a>` : '',
+                pub.arxiv ? `<a href="${pub.arxiv}" target="_blank" class="btn-cite">arXiv</a>` : '',
                 pub.pdf ? `<a href="${pub.pdf}" target="_blank" class="btn-cite"><i class="fas fa-file-pdf"></i> PDF</a>` : ''
             ].filter(Boolean).join(' ');
             if (links) citation += `<span class="pub-cite-links">${links}</span>`;
@@ -277,7 +278,10 @@ window.filterPubs = function(type, event) {
     if (event.target) event.target.classList.add('active');
     const items = document.querySelectorAll('.pub-item');
     items.forEach(item => {
-        item.style.display = (type === 'all' || item.getAttribute('data-type') === type) ? 'flex' : 'none';
+        let itemType = item.getAttribute('data-type');
+        // Preprints (techreport) are listed under the ArXiv/Other filter.
+        if (itemType === 'techreport') itemType = 'misc';
+        item.style.display = (type === 'all' || itemType === type) ? 'flex' : 'none';
     });
 };
 

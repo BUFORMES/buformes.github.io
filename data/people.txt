@@ -2,7 +2,7 @@ STATUS: Active
 CATEGORY: PI
 NAME: Prof. Yves Atchade
 ROLE: Professor
-IMAGE: imgs/people/PI.jpeg
+IMAGE: imgs/people/PI_casual.jpg
 LINK: bio.html
 ---
 STATUS: Active

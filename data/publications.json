@@ -1,5 +1,25 @@
 [
   {
+    "type": "techreport",
+    "year": "2026",
+    "title": "PDE-constrained inverse problems at the root-n rate via debiased physics-informed neural networks",
+    "authors": "Yves Atchade, Debarghya Mukherjee",
+    "journal": "Preprint",
+    "pdf": null,
+    "arxiv": "https://arxiv.org/abs/2609.12301",
+    "doi": null
+  },
+  {
+    "type": "article",
+    "year": "2026",
+    "title": "On the estimation rate of Bayesian physics-informed neural networks for inverse problems",
+    "authors": "Yi Sun, Debarghya Mukherjee, Yves Atchade",
+    "journal": "Bernoulli (to appear)",
+    "pdf": "pdfs/B_pinn.pdf",
+    "arxiv": "https://arxiv.org/abs/2406.14808",
+    "doi": null
+  },
+  {
     "type": "inproceedings",
     "year": "2026",
     "title": "Laplace approximation for Bayesian variable selection via Le Cam's one-step procedure",
@@ -429,15 +449,6 @@
     "authors": "Yves Atchade, Francois Perron",
     "journal": "Statistica Sinica, 15, 3–18",
     "pdf": "pdfs/mhcv.pdf",
-    "doi": null
-  },
-  {
-    "type": "techreport",
-    "year": "2024",
-    "title": "On the estimation rate of Bayesian physics-informed neural networks for inverse problems",
-    "authors": "Yi Sun, Debarghya Mukherjee, Yves Atchade",
-    "journal": "Preprint",
-    "pdf": "pdfs/B_pinn.pdf",
     "doi": null
   },
   {
