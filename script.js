@@ -51,13 +51,18 @@ async function loadPublications() {
             //const pubNumber = data.length - index;
             let citation = `<span class="apa-authors">${pub.authors}</span> (<span class="apa-year">${pub.year}</span>). <span class="apa-title">${pub.title}</span>. `;
 
+            // For preprints, the "Preprint" label itself links to arXiv.
+            const arxivInJournal = pub.arxiv && pub.journal === 'Preprint';
             if (pub.journal) {
-                citation += `<span class="apa-journal"><em>${pub.journal}</em></span>. `;
+                const journal = arxivInJournal
+                    ? `<a href="${pub.arxiv}" target="_blank">${pub.journal}</a>`
+                    : pub.journal;
+                citation += `<span class="apa-journal"><em>${journal}</em></span>. `;
             }
 
             const links = [
                 pub.doi ? `<a href="${pub.doi}" target="_blank" class="btn-cite">DOI</a>` : '',
-                pub.arxiv ? `<a href="${pub.arxiv}" target="_blank" class="btn-cite">arXiv</a>` : '',
+                pub.arxiv && !arxivInJournal ? `<a href="${pub.arxiv}" target="_blank" class="btn-cite">arXiv</a>` : '',
                 pub.pdf ? `<a href="${pub.pdf}" target="_blank" class="btn-cite"><i class="fas fa-file-pdf"></i> PDF</a>` : ''
             ].filter(Boolean).join(' ');
             if (links) citation += `<span class="pub-cite-links">${links}</span>`;
@@ -110,9 +115,10 @@ async function loadProjects() {
                     </div>
                 </article>`;
 
-            if (data.STATUS === 'Active') {
+            // Without a separate past-projects list, all projects share one list.
+            if (data.STATUS === 'Active' || !pastContainer) {
                 activeContainer.innerHTML += projectHTML;
-            } else if (pastContainer) {
+            } else {
                 pastContainer.innerHTML += projectHTML;
             }
         });

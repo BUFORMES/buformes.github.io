@@ -8,7 +8,7 @@ LINK: https://math.bu.edu/people/atchade/rainfall.html
 REPO: https://github.com/indrakalita/RainfallForecasting
 ---
 STATUS: Past
-TITLE: Large-Scale Bayesian Inference
+TITLE: Unbiased MCMC
 TAG: Bayesian ML, MCMC
 IMAGE: imgs/projects/unbiased_mcmc.png
 DESC: Developing computationally tractable Bayesian frameworks for high-dimensional problems, focusing on unbiased MCMC methods and sampling theory for complex systems.
