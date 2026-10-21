@@ -1523,3 +1523,9 @@ body.home .site-footer p,
 .project-page .post-content p { margin-bottom: 1em; }
 .project-page .post-content .bio-list { font-size: 1rem; margin-bottom: 1em; }
 .project-page figure { margin: 30px 0; }
+.figure-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; align-items: start; }
+.figure-pair .blog-img-full { margin-top: 0; }
+.figure-pair-small { justify-items: center; }
+.figure-pair-small img { max-width: 100%; height: auto; }
+.project-page .figure-label { text-align: center; font-weight: 600; font-size: 0.95rem; margin-bottom: 4px; }
+@media (max-width: 600px) { .figure-pair { grid-template-columns: 1fr; } }

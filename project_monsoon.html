@@ -19,12 +19,17 @@
             <span class="tag">Climate Science, Seasonal Forecasting, Deep Learning</span>
 
             <figure>
-                <a href="imgs/projects/monsoon/2024-03-01_Rainbelt.png" target="_blank">
-                    <img src="imgs/projects/monsoon/2024-03-01_Rainbelt.png" alt="Two-week average rainfall over West Africa in early March 2024, with the rainbelt line in red" class="blog-img-full">
-                </a>
+                <div class="figure-pair">
+                    <a href="imgs/projects/monsoon/2024-03-01_Rainbelt.png" target="_blank">
+                        <img src="imgs/projects/monsoon/2024-03-01_Rainbelt.png" alt="Two-week average rainfall over West Africa in early March 2024, with the rainbelt line in red" class="blog-img-full">
+                    </a>
+                    <a href="imgs/projects/monsoon/2024-07-01_Rainbelt.png" target="_blank">
+                        <img src="imgs/projects/monsoon/2024-07-01_Rainbelt.png" alt="Two-week average rainfall over West Africa in early July 2024, with the rainbelt line in red" class="blog-img-full">
+                    </a>
+                </div>
                 <figcaption>
-                    Two-week average rainfall over West Africa (first two weeks of March 2024, IMERG),
-                    with the location of the rainbelt shown as the red line.
+                    Two-week average rainfall (IMERG) and location of the rainbelt (red line) at two
+                    times of the year: first two weeks of March 2024 (left) and of July 2024 (right).
                 </figcaption>
             </figure>
 
@@ -116,6 +121,44 @@
                 <li>MLWAM's error stays nearly constant from 2 to 6 months ahead, while SEAS5's error grows by about 64%; MLWAM's advantage therefore increases with lead time.</li>
                 <li>MLWAM's forecast distributions are much better calibrated: its nominal 90% prediction intervals cover about 80% of outcomes, compared with 13&ndash;35% for SEAS5.</li>
             </ul>
+            <figure>
+                <a href="imgs/projects/monsoon/crps_by_leadtime.png" target="_blank">
+                    <img src="imgs/projects/monsoon/crps_by_leadtime.png" alt="Mean CRPS by lead time for MLWAM and SEAS5, and share of grid points where MLWAM beats SEAS5" class="blog-img-full">
+                </a>
+                <figcaption>
+                    CRPS by lead time (\(t_1\)&ndash;\(t_9\), about 2&ndash;6 months ahead). (a, b) Mean
+                    CRPS for MLWAM (blue) and SEAS5 (red) in hindcast and real-time forecast; shaded bands
+                    show &plusmn;1 SD across space&ndash;time grid points. (c) Percentage of grid points where
+                    MLWAM achieves lower CRPS than SEAS5.
+                </figcaption>
+            </figure>
+            <figure>
+                <div class="figure-pair figure-pair-small">
+                    <div>
+                        <p class="figure-label">Hindcast</p>
+                        <img src="imgs/projects/monsoon/boxplot_all_h.png" alt="Boxplots of CRPS in hindcast for SEAS5, GloSea and MLWAM">
+                    </div>
+                    <div>
+                        <p class="figure-label">Forecast</p>
+                        <img src="imgs/projects/monsoon/boxplot_all_f.png" alt="Boxplots of CRPS in forecast for SEAS5, GloSea and MLWAM">
+                    </div>
+                </div>
+                <figcaption>
+                    Distribution of CRPS (in degrees of latitude; lower is better) for MLWAM compared with
+                    the operational systems SEAS5 and GloSea, in hindcast (left) and forecast (right).
+                </figcaption>
+            </figure>
+            <figure>
+                <a href="imgs/projects/monsoon/example_2014.png" target="_blank">
+                    <img src="imgs/projects/monsoon/example_2014.png" alt="Grid of rainbelt forecasts for 2014 from SEAS5, GloSea and MLWAM compared with the observed rainbelt" class="blog-img-full">
+                </a>
+                <figcaption>
+                    Example forecasts for 2014, a held-out test year. Each column is a forecast issued on
+                    the date at the top (January to May 2014), and each row a target two-week period
+                    (date on the left). Observed rainbelt in red, MLWAM in orange, SEAS5 dashed blue,
+                    GloSea dotted green. Click to enlarge.
+                </figcaption>
+            </figure>
             <p>
                 MLWAM is open-source and trained at a fraction of the cost of operational systems.
                 Because the position of the rainbelt governs the onset and end of the rainy season and
@@ -135,14 +178,6 @@
                 (2026).
                 <a href="https://doi.org/10.1175/aies-d-24-0116.1" target="_blank">DOI</a>
             </p>
-
-            <h3>Team</h3>
-            <ul class="bio-list">
-                <li>Indrajit Kalita</li>
-                <li><a href="bio.html">Yves Atchade</a></li>
-                <li>Natesh Pillai (Harvard University)</li>
-                <li>Peter Huybers (Harvard University)</li>
-            </ul>
 
             <h3>Funding</h3>
             <p>
