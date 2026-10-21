@@ -8,9 +8,9 @@ LINK: https://math.bu.edu/people/atchade/rainfall.html
 REPO: https://github.com/indrakalita/RainfallForecasting
 ---
 STATUS: Active
-TITLE: Understanding and Predicting the West African Monsoon
+TITLE: Understanding and Forecasting the West African Monsoon
 TAG: Climate Science, Deep Learning
-IMAGE: imgs/projects/AOI.jpeg
+IMAGE: imgs/projects/monsoon/rainbelt_card.png
 DESC: Physics-informed machine learning for seasonal forecasts of the West African Monsoon rainbelt up to six months ahead, from sea surface temperatures alone.
 LINK: project_monsoon.html
 REPO: https://github.com/indrakalita/SeasonalRainbelt
