@@ -37,13 +37,18 @@
 
             <h3>A running example</h3>
             <p>
-                Consider the heat equation \(u_t - \theta\, u_{xx} = 0\) on a spatial interval, with
-                known initial and boundary conditions and an unknown diffusion coefficient
-                \(\theta\). We observe \(n\) noisy measurements \(y_i = u(t_i, x_i) + \varepsilon_i\)
-                of the solution at scattered points in space and time, and want to estimate
-                \(\theta\). More generally, we study equations of the form
-                \(\mathcal{H}_0 u + \theta^\top \mathcal{H}_1 u = f\) that are linear in their
-                parameters, a class that includes many linear and nonlinear PDEs.
+                Consider the one-dimensional reaction&ndash;diffusion equation
+            </p>
+            <p>
+                $$-\big(a_\theta(x)\, u'(x)\big)' + \theta_3\, u(x) = f(x), \qquad x \in (0,1), \qquad u(0) = u(1) = 0,$$
+            </p>
+            <p>
+                with diffusion coefficient \(a_\theta(x) = \exp\big(\theta_1 \cos(\pi x) + \theta_2 \cos(2\pi x)\big)\),
+                reaction coefficient \(\theta_3\), and known source term
+                \(f(x) = 5 + 2.5 \sin(3\pi x)\). The solution \(u\) is observed at \(n\) random
+                locations with noise, \(Y_i = u(X_i) + \varepsilon_i\), and the goal is to recover the
+                three parameters \(\theta = (\theta_1, \theta_2, \theta_3)\), together with a measure of
+                uncertainty. This is the example used in the numerical results below.
             </p>
 
             <h3>Questions we study</h3>
@@ -56,7 +61,8 @@
             <h3>Estimation rates for Bayesian PINNs</h3>
             <p>
                 In the first paper, we study a Bayesian PINN estimator of the solution of a PDE from
-                \(n\) independent noisy measurements. When the PDE admits a classical solution that
+                \(n\) independent noisy measurements, for equations that are linear in their unknown
+                coefficients. When the PDE admits a classical solution that
                 is differentiable to order \(\beta\), we show that the mean square error of the
                 Bayesian posterior mean is of order \(n^{-2\beta/(2\beta+d)}\). We also establish a
                 convergence rate for the unknown coefficients, which depends on the order of the
@@ -88,8 +94,8 @@
 
             <h3>Numerical examples</h3>
             <p>
-                The figure below comes from an elliptic (diffusion) example with three unknown
-                parameters, \(\theta_\star = (0.5, 0.3, 2.0)\), repeated over \(B = 100\) simulated
+                The figure below shows the reaction&ndash;diffusion example above, with true parameter
+                \(\theta_\star = (0.5, 0.3, 2.0)\) and noise level \(\sigma = 0.02\), repeated over \(B = 100\) simulated
                 datasets of \(n = 5000\) measurements. The PINN estimator
                 \(\widehat\theta^{\mathrm{PINN}}\) and the plug-in estimator \(\widehat\theta^{\mathrm{PI}}\)
                 remain visibly off-center. The debiased estimator \(\widehat\theta^{\mathrm{db}}\) and
@@ -99,10 +105,10 @@
             </p>
             <figure>
                 <a href="imgs/projects/pde/Poisson_summary_n5000.png" target="_blank">
-                    <img src="imgs/projects/pde/Poisson_summary_n5000.png" alt="Monte Carlo summary of the estimators in the elliptic example with n = 5000" class="blog-img-full">
+                    <img src="imgs/projects/pde/Poisson_summary_n5000.png" alt="Monte Carlo summary of the estimators in the reaction-diffusion example with n = 5000" class="blog-img-full">
                 </a>
                 <figcaption>
-                    Diffusion example with \(n=5000\). Monte Carlo summary over \(B=100\)
+                    Reaction&ndash;diffusion example with \(n=5000\). Monte Carlo summary over \(B=100\)
                     replications (\(\theta_\star=(0.5,0.3,2.0)\)). Rows: \(\theta_1\), \(\theta_2\),
                     \(\theta_3\). Columns: boxplots of \(\widehat\theta^{\mathrm{PINN}}\),
                     \(\widehat\theta^{\mathrm{PI}}\), \(\widehat\theta^{\mathrm{db}}\) and the posterior
