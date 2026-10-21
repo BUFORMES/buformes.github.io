@@ -58,10 +58,10 @@
   {
     "type": "article",
     "year": "2025",
-    "title": "A statistical perspective on unrolling models for inverse problems",
-    "authors": "Xinru Liu, Qiuyun Zhu, Yves Atchade",
-    "journal": "Journal of Machine Learning Research (JMLR), 26, 1–51",
-    "pdf": "https://www.jmlr.org/papers/volume26/24-0131/24-0131.pdf",
+    "title": "A statistical perspective on algorithm unrolling models for inverse problems",
+    "authors": "Yves Atchade, Xinru Liu, Qiuyun Zhu",
+    "journal": "Journal of Machine Learning Research (JMLR), 26(298), 1–47",
+    "pdf": "https://jmlr.org/papers/volume26/23-1512/23-1512.pdf",
     "doi": null
   },
   {
