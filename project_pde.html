@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inverse Problems with PDEs | FORMES</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <div id="header-placeholder"></div>
+    <div id="hero-placeholder"></div>
+
+    <main class="container post-article project-page">
+
+        <section class="post-content">
+            <span class="tag">PDEs, Inverse Problems, Deep Learning</span>
+
+            <h3>Overview</h3>
+            <p>
+                Many systems in the physical and environmental sciences are described by partial
+                differential equations (PDEs) whose coefficients are unknown: a diffusion rate, a
+                reaction constant, a source term. What we observe is a limited number of noisy
+                measurements of the solution. The inverse problem is to recover the unknown
+                parameters from these measurements, and to say how certain we are about them.
+            </p>
+            <p>
+                Physics-informed neural networks (PINNs) have become a popular tool for this task:
+                a neural network approximates the PDE solution, and is fitted both to the data and
+                to the equation itself. PINNs often work remarkably well in practice, but their
+                statistical behavior is not well understood. This project develops the statistical
+                theory of PINN-based estimation for PDE-constrained inverse problems, and uses it
+                to design estimators with better guarantees.
+            </p>
+
+            <h3>A running example</h3>
+            <p>
+                Consider the heat equation \(u_t - \theta\, u_{xx} = 0\) on a spatial interval, with
+                known initial and boundary conditions and an unknown diffusion coefficient
+                \(\theta\). We observe \(n\) noisy measurements \(y_i = u(t_i, x_i) + \varepsilon_i\)
+                of the solution at scattered points in space and time, and want to estimate
+                \(\theta\). More generally, we study equations of the form
+                \(\mathcal{H}_0 u + \theta^\top \mathcal{H}_1 u = f\) that are linear in their
+                parameters, a class that includes many linear and nonlinear PDEs.
+            </p>
+
+            <h3>Questions we study</h3>
+            <ul class="bio-list">
+                <li>How fast do PINN-based estimators of the PDE solution and of its parameters converge as the number of measurements grows?</li>
+                <li>Can we estimate the parameters at the parametric \(\sqrt{n}\) rate, even though the neural network itself converges more slowly?</li>
+                <li>How do we obtain valid uncertainty quantification, both frequentist and Bayesian?</li>
+            </ul>
+
+            <h3>Estimation rates for Bayesian PINNs</h3>
+            <p>
+                In the first paper, we study a Bayesian PINN estimator of the solution of a PDE from
+                \(n\) independent noisy measurements. When the PDE admits a classical solution that
+                is differentiable to order \(\beta\), we show that the mean square error of the
+                Bayesian posterior mean is of order \(n^{-2\beta/(2\beta+d)}\). We also establish a
+                convergence rate for the unknown coefficients, which depends on the order of the
+                differential operator, and validate the theory through simulations.
+            </p>
+            <p class="project-ref">
+                Y. Sun, D. Mukherjee, Y. Atchade. <em>On the estimation rate of Bayesian
+                physics-informed neural networks for inverse problems.</em> Bernoulli (to appear).
+                <a href="https://arxiv.org/abs/2406.14808" target="_blank">arXiv:2406.14808</a>
+            </p>
+
+            <h3>Root-\(n\) inference via debiasing</h3>
+            <p>
+                Plug-in estimators of the PDE parameters inherit the slow convergence of the neural
+                network, which makes them biased and inefficient. In the second paper, we propose a
+                two-step debiased estimator that adds a correction based on the influence function.
+                The resulting estimator is \(\sqrt{n}\)-consistent and asymptotically normal, without
+                requiring the network to be undersmoothed. We extend the approach to Bayesian
+                inference through a debiased quasi-likelihood and prove a Bernstein&ndash;von Mises
+                theorem, so that credible sets have valid frequentist coverage. Along the way, we
+                derive near-minimax rates for neural-network estimation of regression functions and
+                their derivatives in Sobolev spaces.
+            </p>
+            <p class="project-ref">
+                Y. Atchade, D. Mukherjee. <em>PDE-constrained inverse problems at the root-n rate
+                via debiased physics-informed neural networks.</em> Preprint (2026).
+                <a href="https://arxiv.org/abs/2609.12301" target="_blank">arXiv:2609.12301</a>
+            </p>
+
+            <h3>Numerical examples</h3>
+            <p>
+                The figure below comes from an elliptic (diffusion) example with three unknown
+                parameters, \(\theta_\star = (0.5, 0.3, 2.0)\), repeated over \(B = 100\) simulated
+                datasets of \(n = 5000\) measurements. The PINN estimator
+                \(\widehat\theta^{\mathrm{PINN}}\) and the plug-in estimator \(\widehat\theta^{\mathrm{PI}}\)
+                remain visibly off-center. The debiased estimator \(\widehat\theta^{\mathrm{db}}\) and
+                the debiased posterior mean are centered on the truth, the debiased posterior agrees
+                with its Bernstein&ndash;von Mises limit, and the Q&ndash;Q plots confirm the normal
+                approximation. Click the figure to view it at full size.
+            </p>
+            <figure>
+                <a href="imgs/projects/pde/Poisson_summary_n5000.png" target="_blank">
+                    <img src="imgs/projects/pde/Poisson_summary_n5000.png" alt="Monte Carlo summary of the estimators in the elliptic example with n = 5000" class="blog-img-full">
+                </a>
+                <figcaption>
+                    Diffusion example with \(n=5000\). Monte Carlo summary over \(B=100\)
+                    replications (\(\theta_\star=(0.5,0.3,2.0)\)). Rows: \(\theta_1\), \(\theta_2\),
+                    \(\theta_3\). Columns: boxplots of \(\widehat\theta^{\mathrm{PINN}}\),
+                    \(\widehat\theta^{\mathrm{PI}}\), \(\widehat\theta^{\mathrm{db}}\) and the posterior
+                    mean; debiased posterior density from a single run with the BvM limit, the
+                    estimators and the true value overlaid; Q&ndash;Q plot of
+                    \(\sqrt{n}(\widehat\theta^{\mathrm{db}} - \theta_\star)\) against \(N(0,1)\).
+                </figcaption>
+            </figure>
+
+            <h3>Team</h3>
+            <ul class="bio-list">
+                <li><a href="bio.html">Yves Atchade</a></li>
+                <li>Debarghya Mukherjee</li>
+                <li>Yi Sun</li>
+            </ul>
+        </section>
+
+        <div class="post-footer">
+            <a href="projects.html" class="back-button">&larr; Back to Projects</a>
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

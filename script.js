@@ -20,7 +20,9 @@ async function loadComponent(id, file) {
 }
 
 function highlightActiveLink() {
-    const currentPage = window.location.pathname.split("/").pop() || "index.html";
+    let currentPage = window.location.pathname.split("/").pop() || "index.html";
+    // Individual project pages (project_*.html) highlight the Projects tab.
+    if (currentPage.startsWith('project_')) currentPage = 'projects.html';
     const navLinks = document.querySelectorAll('.nav-links a');
     
     navLinks.forEach(link => {
@@ -220,6 +222,7 @@ function loadHeroBanner() {
         "publications.html": { title: "Publications", sub: "Peer-reviewed journals, conferences, and pre-prints." },
         "projects.html": { title: "Our Research Projects", sub: "Developing foundations for statistical methods in environmental and climate sciences" },
         "courses.html": { title: "Teaching & Courses", sub: "Educating the next generation of data scientists and researchers" },
+        "project_pde.html": { title: "Inverse Problems with PDEs", sub: "Statistical theory and methods for physics-informed neural networks" },
         "bio.html": { title: "Prof. Yves Atchade", sub: "Professor of Mathematics and Statistics, Boston University" },
         "contact.html": { title: "Contact", sub: "Get in touch with the FORMES Lab" },
         "news.html": { title: "Lab News", sub: "Recent updates, awards, and milestones" },

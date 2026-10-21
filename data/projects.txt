@@ -7,6 +7,13 @@ DESC: Developing deep learning models to improve rainfall forecasting in West Af
 LINK: https://math.bu.edu/people/atchade/rainfall.html
 REPO: https://github.com/indrakalita/RainfallForecasting
 ---
+STATUS: Active
+TITLE: Inverse Problems with PDEs
+TAG: PDEs, Deep Learning
+IMAGE: imgs/projects/pde_inverse.png
+DESC: Statistical theory and methods for recovering the parameters of partial differential equations from noisy data with physics-informed neural networks, with root-n rates and valid uncertainty quantification.
+LINK: project_pde.html
+---
 STATUS: Past
 TITLE: Unbiased MCMC
 TAG: Bayesian ML, MCMC
