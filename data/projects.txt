@@ -1,11 +1,10 @@
 
 STATUS: Active
-TITLE: Rainfall Prediction in West Africa
-TAG: Deep Learning, Climate Science
-IMAGE: imgs/projects/AOI.jpeg
-DESC: Developing deep learning models to improve rainfall forecasting in West Africa, focusing on agricultural resilience and disaster preparedness.
-LINK: https://math.bu.edu/people/atchade/rainfall.html
-REPO: https://github.com/indrakalita/RainfallForecasting
+TITLE: Inverse Problems with PDEs
+TAG: PDEs, Deep Learning
+IMAGE: imgs/projects/pde_inverse.png
+DESC: Statistical theory and methods for recovering the parameters of partial differential equations from noisy data with physics-informed neural networks, with root-n rates and valid uncertainty quantification.
+LINK: project_pde.html
 ---
 STATUS: Active
 TITLE: Understanding and Forecasting the West African Monsoon
@@ -15,13 +14,6 @@ DESC: Physics-informed machine learning for seasonal forecasts of the West Afric
 LINK: project_monsoon.html
 REPO: https://github.com/indrakalita/SeasonalRainbelt
 ---
-STATUS: Active
-TITLE: Inverse Problems with PDEs
-TAG: PDEs, Deep Learning
-IMAGE: imgs/projects/pde_inverse.png
-DESC: Statistical theory and methods for recovering the parameters of partial differential equations from noisy data with physics-informed neural networks, with root-n rates and valid uncertainty quantification.
-LINK: project_pde.html
----
 STATUS: Past
 TITLE: Unbiased MCMC
 TAG: Bayesian ML, MCMC
@@ -29,3 +21,11 @@ IMAGE: imgs/projects/unbiased_mcmc.png
 DESC: Developing computationally tractable Bayesian frameworks for high-dimensional problems, focusing on unbiased MCMC methods and sampling theory for complex systems.
 LINK: https://pierrejacob.quarto.pub/unbiased-mcmc/
 REPO: https://github.com/pierrejacob/umcmchandbook
+---
+STATUS: Active
+TITLE: Rainfall Prediction in West Africa
+TAG: Deep Learning, Climate Science
+IMAGE: imgs/projects/AOI.jpeg
+DESC: Developing deep learning models to improve rainfall forecasting in West Africa, focusing on agricultural resilience and disaster preparedness.
+LINK: https://math.bu.edu/people/atchade/rainfall.html
+REPO: https://github.com/indrakalita/RainfallForecasting
