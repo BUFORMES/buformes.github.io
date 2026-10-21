@@ -223,6 +223,7 @@ function loadHeroBanner() {
         "projects.html": { title: "Our Research Projects", sub: "Developing foundations for statistical methods in environmental and climate sciences" },
         "courses.html": { title: "Teaching & Courses", sub: "Educating the next generation of data scientists and researchers" },
         "project_pde.html": { title: "Inverse Problems with PDEs", sub: "Statistical theory and methods for physics-informed neural networks" },
+        "project_monsoon.html": { title: "The West African Monsoon", sub: "Understanding and predicting the monsoon rainbelt at seasonal time scales" },
         "bio.html": { title: "Prof. Yves Atchade", sub: "Professor of Mathematics and Statistics, Boston University" },
         "contact.html": { title: "Contact", sub: "Get in touch with the FORMES Lab" },
         "news.html": { title: "Lab News", sub: "Recent updates, awards, and milestones" },

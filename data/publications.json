@@ -2,6 +2,15 @@
   {
     "type": "techreport",
     "year": "2026",
+    "title": "Seasonal forecasting of the West African tropical rainbelt",
+    "authors": "Indrajit Kalita, Natesh Pillai, Peter Huybers, Yves Atchade",
+    "journal": "Preprint",
+    "pdf": null,
+    "doi": null
+  },
+  {
+    "type": "techreport",
+    "year": "2026",
     "title": "PDE-constrained inverse problems at the root-n rate via debiased physics-informed neural networks",
     "authors": "Yves Atchade, Debarghya Mukherjee",
     "journal": "Preprint",

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>West African Monsoon | FORMES</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <div id="header-placeholder"></div>
+    <div id="hero-placeholder"></div>
+
+    <main class="container post-article project-page">
+
+        <section class="post-content">
+            <span class="tag">Climate Science, Seasonal Forecasting, Deep Learning</span>
+
+            <h3>Overview</h3>
+            <p>
+                Rainfall in West Africa shapes agricultural yields, water availability, and flood risk
+                for hundreds of millions of people. Agriculture in the region is predominantly rainfed,
+                and over the past two decades the Sahel has seen recurrent droughts and floods. Most of
+                this rainfall is brought by the West African Monsoon (WAM): a seasonal flow of moist air
+                from the Gulf of Guinea that carries a band of rain, the <em>rainbelt</em>, northward
+                toward the Sahara starting in May, before it recedes back to the Atlantic from October.
+            </p>
+            <p>
+                Predicting how the rainbelt will depart from its usual seasonal cycle in a given year
+                remains highly challenging. Operational seasonal forecasting systems, such as ECMWF's
+                SEAS5 and the UK Met Office's GloSea, couple atmosphere, ocean, land, and ice models;
+                they are extremely expensive to build and run, and they struggle to capture the
+                year-to-year variability of the monsoon over West Africa. This project develops
+                statistical and machine learning methods to understand and predict the WAM at seasonal
+                time scales.
+            </p>
+
+            <h3>The rainbelt</h3>
+            <p>
+                Rather than forecasting the full rainfall field, we focus on the location of the
+                rainbelt: for each longitude \(\lambda\) and each two-week period \(t\), the latitude
+                \(Z(\lambda, t)\) of maximum rainfall near the tropics, computed from IMERG satellite
+                rainfall over a region spanning 18&deg;W&ndash;22&deg;E and 12&deg;S&ndash;18&deg;N. The
+                curve \(\lambda \mapsto Z(\lambda, t)\) traces the rainbelt across West Africa, and its
+                trajectory over the following months is what we aim to predict.
+            </p>
+
+            <h3>MLWAM: a physics-informed model for seasonal prediction</h3>
+            <p>
+                MLWAM is a physics-informed machine learning model that produces probabilistic forecasts
+                of the rainbelt latitude from 2 to 6 months ahead, using sea surface temperature (SST)
+                fields alone. Its main ingredients are:
+            </p>
+            <ul class="bio-list">
+                <li>
+                    <strong>Multi-basin SST inputs.</strong> West African rainfall is linked to SST
+                    anomalies in several oceans. MLWAM ingests SST from the Gulf of Guinea, the Indian
+                    Ocean, the North Atlantic, the Mediterranean Sea, and the equatorial Pacific
+                    simultaneously, so it can learn how these basins interact.
+                </li>
+                <li>
+                    <strong>A PDE constraint encoding climatology.</strong> The broad seasonal movement
+                    of the rainbelt is driven by the difference in solar heating between the two
+                    hemispheres, which pulls it back and forth like a pendulum. We capture this with the
+                    equation
+                    $$\partial_{tt}^2 Z(\lambda, t) - \theta_1(\lambda)\, s(t)\, Z(\lambda, t) = \theta_2(\lambda),$$
+                    where \(s(t)\) is a proxy for the inter-hemispheric difference in insolation, and
+                    use it to regularize a lean UNet during training. This plays a crucial role in
+                    avoiding overfitting with limited data.
+                </li>
+                <li>
+                    <strong>Climate model data to augment observations.</strong> About 25 years of
+                    satellite and reanalysis data (IMERG and ERA5) are too few to train a deep learning
+                    model on their own. We augment them with a moderate amount of CESM2 climate
+                    simulations from 1960&ndash;2000. Evaluation uses observations only.
+                </li>
+                <li>
+                    <strong>Uncertainty quantification.</strong> Each forecast comes with a predictive
+                    distribution, obtained with the EasyUQ method.
+                </li>
+            </ul>
+
+            <!--
+            Figures: add here, e.g.
+            <figure>
+                <a href="imgs/projects/monsoon/fig1.png" target="_blank">
+                    <img src="imgs/projects/monsoon/fig1.png" alt="..." class="blog-img-full">
+                </a>
+                <figcaption>...</figcaption>
+            </figure>
+            -->
+
+            <h3>Results</h3>
+            <p>
+                We evaluated MLWAM by five-fold cross-validation over 2001&ndash;2024, holding out three
+                years at a time, and compared it with SEAS5. Skill is measured relative to a 30-year
+                climatology, so a positive score means the model predicts the year-to-year departures
+                of the rainbelt from its seasonal cycle, not merely the seasonal cycle itself.
+            </p>
+            <ul class="bio-list">
+                <li>MLWAM achieves positive CRPS skill over climatology in 62% of space&ndash;time instances, more than double the rate of SEAS5 (about 30%).</li>
+                <li>MLWAM's anomaly correlation is positive across essentially the whole domain, and exceeds 0.5 in about 28&ndash;31% of cases, compared with 1&ndash;9% for SEAS5.</li>
+                <li>MLWAM's mean CRPS is less than half that of SEAS5, and it outperforms SEAS5 at more than 70% of space&ndash;time grid points.</li>
+                <li>MLWAM's error stays nearly constant from 2 to 6 months ahead, while SEAS5's error grows by about 64%; MLWAM's advantage therefore increases with lead time.</li>
+                <li>MLWAM's forecast distributions are much better calibrated: its nominal 90% prediction intervals cover about 80% of outcomes, compared with 13&ndash;35% for SEAS5.</li>
+            </ul>
+            <p>
+                MLWAM is open-source and trained at a fraction of the cost of operational systems.
+                Because the position of the rainbelt governs the onset and end of the rainy season and
+                the occurrence of dry spells, these forecasts open new possibilities for climate
+                services for farming communities across the region.
+            </p>
+
+            <h3>Publications</h3>
+            <p class="project-ref">
+                I. Kalita, N. Pillai, P. Huybers, Y. Atchade. <em>Seasonal forecasting of the West
+                African tropical rainbelt.</em> Preprint (2026).
+                <a href="https://github.com/indrakalita/SeasonalRainbelt" target="_blank">Code on GitHub</a>
+            </p>
+            <p class="project-ref">
+                I. Kalita, L. Vilallonga, Y. Atchade. <em>Data-driven rainfall prediction at a regional
+                scale: a case study with Ghana.</em> Artificial Intelligence for the Earth Systems
+                (2026).
+                <a href="https://doi.org/10.1175/aies-d-24-0116.1" target="_blank">DOI</a>
+            </p>
+
+            <h3>Team</h3>
+            <ul class="bio-list">
+                <li>Indrajit Kalita</li>
+                <li><a href="bio.html">Yves Atchade</a></li>
+                <li>Natesh Pillai (Harvard University)</li>
+                <li>Peter Huybers (Harvard University)</li>
+            </ul>
+
+            <h3>Funding</h3>
+            <p>
+                Supported in part by NSF grant DMS-2515787 and DOE grant DE-SC0026379.
+            </p>
+        </section>
+
+        <div class="post-footer">
+            <a href="projects.html" class="back-button">&larr; Back to Projects</a>
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
