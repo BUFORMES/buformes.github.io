@@ -149,27 +149,6 @@
     font-family: var(--sans); font-style: normal; font-size: 15px; color: var(--muted);
   }
 
-  /* Timeline */
-  .timeline {
-    list-style: none; margin: 0; padding: 0 0 0 26px;
-    border-left: 2px solid var(--rule);
-    font-family: var(--sans); font-size: 16px; line-height: 1.45;
-  }
-  .timeline li { position: relative; padding: 0 0 20px; }
-  .timeline li::before {
-    content: ""; position: absolute; left: -33px; top: 7px;
-    width: 12px; height: 12px; border-radius: 50%;
-    background: var(--bg); border: 3px solid var(--ochre);
-  }
-  .timeline li.geo::before { border-color: var(--orbit); }
-  .timeline li.now::before { background: var(--ink); border-color: var(--ink); }
-  .timeline .year { display: block; font-weight: 600; color: var(--ink); }
-  .timeline .what { color: var(--ink-soft); }
-  .legend { font-family: var(--sans); font-size: 14px; color: var(--muted); display: flex; gap: 22px; flex-wrap: wrap; margin: 6px 0 18px; }
-  .legend span::before { content: ""; display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 8px; vertical-align: 0; }
-  .legend .stat::before { background: var(--ochre); }
-  .legend .geo::before { background: var(--orbit); }
-
   /* Pipeline diagram */
   .pipeline {
     display: grid; grid-template-columns: 1fr auto 1fr auto 1fr; align-items: stretch; gap: 10px;
@@ -238,7 +217,7 @@
   <div class="wrap">
     <nav class="sitenav"><a href="../index.html">FORMES</a> &nbsp;/&nbsp; <a href="../blog.html">Blog</a></nav>
     <h1>Africa should invest more in satellite remote sensing data skills</h1>
-    <p class="deck">In 1962, newly independent states built an elite statistics school that still runs their economies. The same idea could turn free satellite data into information Africa can govern with.</p>
+    <p class="deck">In 1962, newly independent African states came together to build an elite statistics school that still runs their economies. The same idea today could turn free satellite data into valuable information that the continent needs to face its challenges.</p>
     <div class="byline">
       <div class="avatar" aria-hidden="true">YA</div>
       <div>
@@ -310,25 +289,8 @@
 
   <article class="wrap">
 
-    <p>Statistics is crucial for governance and political stability. At their independence around 1960, very few African countries had the technical capacity to govern. To the credit of the founding fathers, the statistics apparatus was one of the first they decided to build. In 1962 the newly independent sub-Saharan francophone states, France’s INSEE and the six-member European Economic Community jointly created the CESD (Centre Européen de Formation des Statisticiens-Économistes des pays en voie de développement) to train French-speaking African statisticians. It was housed inside ENSAE, France’s elite statistics school, and its students took roughly 80% of ENSAE’s courses. The highest degree of the program is the Ingénieur Statisticien Économiste (ISE), roughly equivalent to a master’s degree in econometrics in the university system. The training then progressively moved to Africa — to Abidjan, Yaoundé, Dakar and Kigali — and the CESD stopped teaching in 1994. The school in Abidjan, founded in 1961 as the École de statistique d’Abidjan and renamed ENSEA in 1982, would become the flagship.</p>
-
-    <figure>
-      <div class="legend"><span class="stat">Statistics schools (CESD lineage)</span><span class="geo">Regional geospatial centres</span></div>
-      <ol class="timeline">
-        <li><span class="year">1961</span><span class="what">École de statistique d’Abidjan founded — renamed ENSEA in 1982, it becomes the flagship.</span></li>
-        <li><span class="year">1962</span><span class="what">CESD created in Paris by the new francophone states, INSEE and the six-member EEC, housed inside ENSAE.</span></li>
-        <li><span class="year">1963</span><span class="what">First joint entrance examination, the concours — still running today.</span></li>
-        <li class="geo"><span class="year">1972</span><span class="what">Regional Centre for Training in Aerospace Surveys opens at Ile-Ife (now AFRIGIST).</span></li>
-        <li class="geo"><span class="year">1975</span><span class="what">Regional Centre for Mapping of Resources for Development starts operating from Nairobi.</span></li>
-        <li><span class="year">1977</span><span class="what">The United Nations counts every professional statistician in Africa.</span></li>
-        <li><span class="year">1994</span><span class="what">CESD stops teaching; training has moved to Abidjan, Yaoundé, Dakar and Kigali.</span></li>
-        <li class="now"><span class="year">2025</span><span class="what">The African Space Agency is inaugurated in Cairo, 20 April.</span></li>
-        <li class="now"><span class="year">2026</span><span class="what">First International Space Summit, Paris, 9–10 September.</span></li>
-      </ol>
-      <figcaption>Sixty-five years of institution-building, in two lineages.</figcaption>
-    </figure>
-
-    <p>The result of this ambitious program was one of the most quietly successful institutional experiments of the independence era. In 1977 the United Nations counted every professional statistician working in Africa. Leaving aside Egypt, South Africa and a handful of territories still under colonial rule, the total was estimated at 1,482 people. Add the middle-level staff and the number reached about 4,460 for the whole continent. According to the same survey, the CESD had trained 499 professional and ISE, and 352 middle-level statisticians. The result is also clearly visible today. The ISEs essentially run the economic measurement apparatus of francophone Africa. The current heads of the statistical institutes in Guinea, Senegal, Togo and Côte d’Ivoire are ISE holders. AFRISTAT — the West Africa intergovernmental statistical body — was founded and first directed by Lamine Diop, an ISE of the CESD who had earlier run the CESD itself, the first African to hold that post. Many in the senior leadership of the administrations and private sectors of these countries are also ISEs.</p>
+    <p>Statistics is crucial for governance and political stability. At their independence around 1960, very few African countries had the technical statistical capacity to govern. To the credit of the founding fathers, the statistics apparatus was one of the first they decided to build. In 1962 the newly independent sub-Saharan francophone states, France’s INSEE and the six-member European Economic Community jointly created the CESD (Centre Européen de Formation des Statisticiens-Économistes des pays en voie de développement) to train French-speaking African statisticians. It was housed inside ENSAE, France’s elite statistics school, and its students took roughly 80% of ENSAE’s courses. The highest degree of the program is the Ingénieur Statisticien Économiste (ISE), roughly equivalent to a master’s degree in econometrics in the university system. The training then progressively moved to Africa — to Abidjan, Yaoundé, Dakar and Kigali — and the CESD stopped teaching in 1994. The school in Abidjan, founded in 1961 as the École de statistique d’Abidjan and renamed ENSEA in 1982, would become the flagship.</p>
+    <p>The result of this ambitious program was one of the most quietly successful institutional experiments of the independence era. In 1977 the United Nations counted every professional statistician working in Africa. Leaving aside Egypt, South Africa and a handful of territories still under colonial rule, the total was estimated at 1,482 people. Add the middle-level staff and the number reached about 4,460 for the whole continent. According to the same survey, the CESD had trained 499 professional and ISE (that is roughly one-third of the total), and 352 middle-level statisticians. The impact of the program is also clearly visible today. The ISEs essentially run the economic measurement apparatus of francophone Africa. The current heads of the statistical institutes in Guinea, Senegal, Togo and Côte d’Ivoire are ISE holders. AFRISTAT — the West Africa intergovernmental statistical body — was founded and first directed by Lamine Diop, an ISE of the CESD who had earlier run the CESD itself, the first African to hold that post. Many in the senior leadership of the administrations and private sectors of these countries are also ISEs.</p>
 
     <figure>
       <svg viewBox="0 0 680 230" role="img" aria-labelledby="chart-title">
@@ -355,7 +317,7 @@
           <text x="340" y="222" fill="var(--muted)" font-size="13" text-anchor="middle">Africa excluding Egypt, South Africa and territories still under colonial rule</text>
         </g>
       </svg>
-      <figcaption>Fifteen years after its creation, one school had trained a third of the continent’s professional statisticians. <b>Source:</b> United Nations survey, 1977.</figcaption>
+      <figcaption>Fifteen years after its creation, one school had trained a third of the continent’s professional statisticians. <b>Source:</b> United Nations Economic and Social Council, Statistical Commission, <i>Review of Training of Statistical Personnel: Report of the Secretary-General</i>, E/CN.3/525, 17 April 1978.</figcaption>
     </figure>
 
     <p>The key mechanism that made the success of the program is still running today. It is a jointly held, fiercely competitive entrance examination (“concours”) — first established in 1963 — that aims to recruit students with talent in mathematics, and train them in statistics. The competitive entrance exam attracts talent, makes admission meritocratic and therefore politically hard to corrupt. I went through the program some 30 years ago, and I remember being deeply fascinated by its pursuit of excellence.</p>
@@ -402,7 +364,7 @@
 
     <p>He said explicitly that the states responsible for the Congo Basin need not only satellite data but the capacity to process it, alongside trained scientists, engineers and entrepreneurs. However, the action plans proposed in response lack the much-needed investment to address the human capital challenge. Nigeria came to Paris seeking more than $1 billion of investment for six new satellites, a propulsion center and a domestic rocket program. The DRC proposed a Congo Basin space partnership and a regional observatory. African governments have budgeted about $828 million for space in 2026, a third more than the year before, but mostly for hardware.</p>
 
-    <p>Controlling the data acquisition with new national satellites is certainly important as a matter of national sovereignty, but is not much progress if the data processing is sub-contracted to foreign entities. African countries must strategically pool their effort and massively invest to train remote sensing data experts. Satellite remote sensing is a modern triumph of science and technology. A marriage of mathematics, physics, engineering, signal processing and computer science. There is, on the African continent, no remote sensing equivalent of the ISE profile: no three-year, fiercely selective engineering degree recruiting out of serious mathematics preparation, that trains the students in physics, electronics and engineering, statistics, hardware and database technologies, and whose graduates are expected to invent methods rather than apply them.</p>
+    <p>Controlling the data acquisition with new national satellites is certainly important as a matter of national sovereignty, but is not much progress if the data processing is sub-contracted to foreign entities. African countries must strategically pool their effort and massively invest to train remote sensing data experts. Satellite remote sensing is a modern triumph of science and technology. A marriage of mathematics, physics, engineering, signal processing and computer science. Unfortunately there is, on the African continent, no remote sensing equivalent of the ISE profile: no three-year, fiercely selective engineering degree recruiting out of serious mathematics preparation, that trains the students in physics, electronics and engineering, statistics, hardware and database technologies, and whose graduates are expected to invent methods rather than apply them.</p>
 
     <h2>The schools that exist, and the tier they teach to</h2>
 
@@ -468,7 +430,7 @@
 
     <p><span class="runin">Keep the concours.</span> One of the key successes of the CESD model is that entrance in the program is based on the ranking from a rigorous entrance examination (that emphasizes mathematics), simultaneously administered in all participating countries. Discarding this feature as a technicality would be a mistake. The power of the concours to attract very talented young students cannot be overstated.</p>
 
-    <p><span class="runin">Mandate the reporting of agrometeorological and environmental statistics.</span> One effective way to accelerate the use of satellite remote sensing data is to create national remote sensing data institutes, and mandate at the national and regional levels the production of official and standardized agrometeorological and environmental statistics. The institutes are de facto potential employers, and in turn their researchers become future instructors in the school.</p>
+    <p><span class="runin">Mandate the reporting of agrometeorological and environmental statistics.</span> One effective way to accelerate the use of satellite remote sensing data is to create national remote sensing data institutes, and mandate at the national and regional levels the production of official and harmonized agrometeorological and environmental statistics. The institutes are de facto potential employers, and in turn their researchers become future instructors in the school.</p>
 
     <p>The diagnosis of the African leadership at the International Space Summit is accurate. However, the proposed plans lack the long-term commitment to build the needed brainpower to convert remote sensing data into information on the continent. The CESD program shows that (and how) it can be done.</p>
 
