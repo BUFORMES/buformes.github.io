@@ -167,20 +167,6 @@
     .pipeline .arrow { transform: rotate(90deg); justify-self: center; }
   }
 
-  /* Comparison table */
-  table.tiers {
-    width: 100%; border-collapse: collapse;
-    font-family: var(--sans); font-size: 15px; line-height: 1.45;
-  }
-  table.tiers th, table.tiers td { text-align: left; vertical-align: top; padding: 12px 12px 12px 0; border-bottom: 1px solid var(--rule); }
-  table.tiers th { font-weight: 600; color: var(--ink); }
-  table.tiers thead th { border-bottom: 2px solid var(--ink); padding-bottom: 10px; }
-  table.tiers td { color: var(--ink-soft); }
-  table.tiers thead th:nth-child(3) { color: var(--ochre); }
-  table.tiers tbody th { color: var(--muted); font-weight: 500; width: 26%; }
-  .table-scroll { overflow-x: auto; }
-  @media (max-width: 560px) { table.tiers { min-width: 520px; } }
-
   .map-labels text { font-family: var(--sans); font-size: 15.5px; fill: var(--ink); }
   .map-labels .stat circle { fill: var(--ochre); }
   .map-labels .geo circle { fill: var(--orbit); }
@@ -202,7 +188,6 @@
   .sitenav a { color: var(--muted); text-decoration: none; }
   .sitenav a:hover { color: var(--ink); }
   footer.author .back { display: inline-block; margin-top: 20px; }
-  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
 </style>
 </head>
 <body>
@@ -405,24 +390,6 @@
     </figure>
 
     <p>These institutions do real work and deserve more money than they get. The question is not whether they teach well but what tier they teach to. And this question is not about the degree they deliver. AFRIGIST’s portfolio runs from an 18-month technologist diploma up to professional masters and a PhD track; CRASTE-LF awards a recognized master’s. The levels go high enough. What differs is the aim, and it shows first in who gets in. Entry at AFRIGIST and CRASTE-LF is by application review with preference for serving civil servants. The intake in these schools is predominantly from professionals already in post, not from the strongest young mathematicians and physicists on the continent, and the syllabus is organized around producing geospatial information rather than around the physics, the signal processing and the computing theory that produce this geospatial information in the first place. Graduates of these programs are not trained to invent better algorithms for the environments they work in.</p>
-
-    <figure>
-      <div class="table-scroll">
-      <table class="tiers">
-        <thead>
-          <tr><th scope="col"><span class="sr">Criterion</span></th><th scope="col">Existing regional centres</th><th scope="col">The missing profile</th></tr>
-        </thead>
-        <tbody>
-          <tr><th scope="row">Who gets in</th><td>Mostly professionals already in post, with preference for serving civil servants</td><td>The strongest young mathematicians and physicists on the continent</td></tr>
-          <tr><th scope="row">How</th><td>Application review</td><td>A joint, ranked concours held simultaneously in all member countries</td></tr>
-          <tr><th scope="row">What is taught</th><td>Producing geospatial information: remote sensing, GIS, satellite meteorology</td><td>The physics, signal processing, statistics and computing theory that produce it</td></tr>
-          <tr><th scope="row">Length and tier</th><td>18-month diplomas to professional master’s and a PhD track</td><td>A three-year, fiercely selective engineering degree — the ISE cycle, for remote sensing</td></tr>
-          <tr><th scope="row">Graduates are expected to</th><td>Apply methods</td><td>Invent them</td></tr>
-        </tbody>
-      </table>
-      </div>
-      <figcaption>Same degree levels, different aim. The difference shows first in who gets in.</figcaption>
-    </figure>
 
     <h2>How to do it again</h2>
 
